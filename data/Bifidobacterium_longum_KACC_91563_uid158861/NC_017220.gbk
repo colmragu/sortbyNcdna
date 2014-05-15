@@ -1,0 +1,200 @@
+LOCUS       NC_017220               4233 bp    DNA     circular CON 08-JUN-2013
+DEFINITION  Bifidobacterium longum subsp. longum KACC 91563 plasmid BLNIAS_P1,
+            complete sequence.
+ACCESSION   NC_017220
+VERSION     NC_017220.1  GI:384202547
+DBLINK      Project: 158861
+            BioProject: PRJNA158861
+KEYWORDS    .
+SOURCE      Bifidobacterium longum subsp. longum KACC 91563
+  ORGANISM  Bifidobacterium longum subsp. longum KACC 91563
+            Bacteria; Actinobacteria; Actinobacteridae; Bifidobacteriales;
+            Bifidobacteriaceae; Bifidobacterium.
+REFERENCE   1  (bases 1 to 4233)
+  AUTHORS   Ham,J.S., Lee,T., Byun,M.J., Lee,K.T., Kim,M.K., Han,G.S.,
+            Jeong,S.G., Oh,M.H., Kim,D.H. and Kim,H.
+  TITLE     Complete Genome Sequence of Bifidobacterium longum subsp. longum
+            KACC 91563
+  JOURNAL   J. Bacteriol. 193 (18), 5044 (2011)
+   PUBMED   21742881
+REFERENCE   2  (bases 1 to 4233)
+  AUTHORS   Ham,J.-S., Kim,M.-K., Han,G.-S., Jeong,S.-G., Oh,M.-H., Ki,D.-H.,
+            Lee,K.-T., Lee,T., Byun,M.-J. and Kim,H.
+  TITLE     Bifidobacterium longum KACC 91563 plasmid BLNIAS_P1
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 4233)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-APR-2012) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   4  (bases 1 to 4233)
+  AUTHORS   Ham,J.-S., Kim,M.-K., Han,G.-S., Jeong,S.-G., Oh,M.-H., Ki,D.-H.,
+            Lee,K.-T., Lee,T., Byun,M.-J. and Kim,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-MAY-2011) Animal Products Research and Development,
+            National Institute of Animal Science, 77 Chuksan-Gil,
+            Omokchun-Dong, Kwonsun-Gu, Suwon 441706, Korea
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to CP002795.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..4233
+                     /organism="Bifidobacterium longum subsp. longum KACC
+                     91563"
+                     /mol_type="genomic DNA"
+                     /strain="KACC 91563"
+                     /sub_species="longum KACC 91563"
+                     /db_xref="taxon:1035817"
+                     /plasmid="BLNIAS_P1"
+     gene            740..1045
+                     /gene="rep"
+                     /locus_tag="BLNIAS_P100003"
+                     /db_xref="GeneID:12166021"
+     CDS             740..1045
+                     /gene="rep"
+                     /locus_tag="BLNIAS_P100003"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="replicase"
+                     /protein_id="YP_005586318.1"
+                     /db_xref="GI:384202548"
+                     /db_xref="GeneID:12166021"
+                     /translation="MTVFPNRTSVPTVAQARAVERRRRREAPARPAERRESPREDVEA
+                     RWIEVRGWGNVWMTSELFDVGQARAHLEGAVDPVSCPVCAYDERNREHHARNAGRLF"
+     gene            complement(1042..2742)
+                     /locus_tag="BLNIAS_P100005"
+                     /db_xref="GeneID:12166022"
+     CDS             complement(1042..2742)
+                     /locus_tag="BLNIAS_P100005"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mobilization protein"
+                     /protein_id="YP_005586319.1"
+                     /db_xref="GI:384202549"
+                     /db_xref="GeneID:12166022"
+                     /translation="MAIYHLSVSNVSRASGSKATATLSYITGKRVHDERRGETYDYGR
+                     KERVLRVGTLLPEGAPAEFADPAVLFNAVELHETGRTARPAKKIVVALPREFTPRQRV
+                     QALEEYIRENLNADGYAATYAIHEDREGNNPHAHILVANRQIDPATGGWARLKQRMEY
+                     VLDERGERVPLIDPETGRQKTDKRGRRQWKRTSVSLNPLDRKAKLKALRESWAKTCNA
+                     RLDETARIDHRSLEDQGSDLEPTIHEGYAARAIERAGGVSERCEANREIRRSNGLLTA
+                     IRTELGRIFDRLGELFAAKIRQLRQRQARPEPAREPNWRYFEGDARRQLEADRADHTA
+                     AIRGKLMGAKADVRNREEWWRSHGTEEFEAAKQIIDVARAASREARDANVFKRGRLLR
+                     NAEQVAGEQSEKLRGAVPWLEDTDIPSDWDQANRFRMRATKAIHDHDMQPRTGLVDEL
+                     ERRLEQAERAEGEKPSPEQVKALALRMAEQRERAAEDPTQDMNRPEPSGDEPLDLSEP
+                     EDLGEGGPFEERSAPRTKADLLREIRQRADRRTGQQEAEQRQIDPWQAQPPQRRGHGR
+                     "
+     misc_feature    complement(1984..2688)
+                     /locus_tag="BLNIAS_P100005"
+                     /note="MobA/MobL family; Region: MobA_MobL; pfam03389"
+                     /db_xref="CDD:217529"
+     gene            3029..3157
+                     /locus_tag="BLNIAS_P100006"
+                     /db_xref="GeneID:12166023"
+     CDS             3029..3157
+                     /locus_tag="BLNIAS_P100006"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="YP_005586320.1"
+                     /db_xref="GI:384202550"
+                     /db_xref="GeneID:12166023"
+                     /translation="MVKSLDEQIKSLQERQAQLKARENDLMARREGTRTRGPAPSA"
+     gene            3267..3542
+                     /locus_tag="BLNIAS_P100009"
+                     /db_xref="GeneID:12166024"
+     CDS             3267..3542
+                     /locus_tag="BLNIAS_P100009"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="YP_005586321.1"
+                     /db_xref="GI:384202551"
+                     /db_xref="GeneID:12166024"
+                     /translation="MCSTDVMDNYTSREDLKTTVTKALEHNVRTSDGMNWNLHDLVYE
+                     ALSEEWGQKGRRDQRPLGGRRAKRIPATLIRAGQPPNAGLPKHPPMA"
+     gene            3648..3953
+                     /locus_tag="BLNIAS_P100010"
+                     /db_xref="GeneID:12166025"
+     CDS             3648..3953
+                     /locus_tag="BLNIAS_P100010"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="YP_005586322.1"
+                     /db_xref="GI:384202552"
+                     /db_xref="GeneID:12166025"
+                     /translation="MLLGTKRGRERTGDKKGANRGQKGNEPGTTKRERTGDKKGANRG
+                     QKGNELSTKGERKSTAVIHILGFRCFFFFAYKYLYTCLAGTPRSALLPQGLRSHSPT"
+ORIGIN      
+        1 gtctcacggc ttcatctcga agatcgccgc gcaggtctcc ctgccctaca ggaggcccaa
+       61 ggatggcgtc aaggagatcg agcggcgcaa cggcagcctg gtcgtgcgct acgtgtccgg
+      121 cgccgactat ctgccctatg gcaagtatcc gcgcctgttc gagttgtggg cgtgcacgat
+      181 gatcaaacga acgacccgtg cttcgacccg gagacgaaca cgctgcatct gggcaccacg
+      241 ttccgcgagt tcctgcgcct catcggcgtg caggtcggtg gccggcagct taagtccatc
+      301 aagccccagc tggagaggtt gttcaaatgc gtgtacatca tcagtaacaa caccgagaac
+      361 accagccagg gcgtgaactt cacggtcgcg gagaaatacc agatcgattg gctgcggaac
+      421 gaaccacagt cgcacggcct gttcgaaaac tgggtgcaat tgagtcagcg atacgtggac
+      481 atgttgcggg atcatcccgt gccggttgat ctcaaggtga tcgccaggct ccgcaagccg
+      541 atggccatcg acgtgtactg gtggctgacc aagcgcgtct acaacctgca cgagccggtc
+      601 acgatcacct ggcagcagct ttaccggcag ttcggcagcg ataccaaaag agctgtggaa
+      661 gttcaagcag aatttcaagg atgctgtggc cgaggtcgtg gaggtgtatc cgtgcaggat
+      721 cacgttgggg ccgcagcggg tgacggtgtt cccgaaccgg acgagcgtgc ccacggtggc
+      781 gcaggccagg gccgtggagc gccgtaggcg tcgcgaggcc ccggcgaggc ccgcggaacg
+      841 gcgggagagc ccgcgtgagg acgtggaggc ccggtggatc gaggtcaggg gctggggcaa
+      901 cgtgtggatg acgtcggagc tgttcgacgt gggtcaggcg cgcgcccatc tggagggggc
+      961 cgtcgatccc gtttcgtgcc cggtgtgcgc ctatgacgag cgcaaccgcg aacatcatgc
+     1021 gcggaacgcc ggaaggctgt tctagcggcc gtgtccgcgc ctctggggcg gttgcgcctg
+     1081 ccatgggtcg atctgccgct gttcggcctc ctgctggcct gtgcgcctgt ctgcgcgctg
+     1141 cctgatctcc ctgagcaggt cggccttggt cctgggggcg cttcgctcct cgaacgggcc
+     1201 gccctccccc aggtcctcgg gctcgctcag gtccaacggc tcgtcaccgg acggctcggg
+     1261 tcggttcatg tcctgcgtcg ggtcctccgc cgcccgttca cgctgttcgg ccatgcgcag
+     1321 tgcgagggcc ttcacctgtt cggggcttgg cttctcgccc tcggcccgct cggcctgttc
+     1381 gagccgcctc tccagttcgt ccacgaggcc ggtcctcggc tgcatgtcgt ggtcgtggat
+     1441 ggccttggtg gccctcatgc ggaacctgtt ggcctggtcc cagtcgctcg ggatgtcggt
+     1501 gtcttcgagc catggcaccg ccccgcgcag cttctcggac tgctccccgg ccacctgttc
+     1561 ggcgttccgc agcagcctgc cgcgcttgaa gacgttcgcg tccctggcct cgcgcgaggc
+     1621 ggctcgcgcc acgtcgatga tctgcttggc ggcctcaaac tcctcggtgc cgtggctcct
+     1681 ccaccactcc tcgcggttcc tcacgtcggc cttggctccc atgagttttc cacggatcgc
+     1741 tgccgtgtgg tcggccctgt cggcttcgag ctggcggcgc gcgtcgccct cgaagtagcg
+     1801 ccagttcggc tccctggccg gttccggcct cgcctggcgt tggcgcagct gcctgatctt
+     1861 ggcggcgaac agctcgccca ggcggtcgaa tatccggccg agttcggtgc ggatggcggt
+     1921 cagcaggccg ttgctgcgcc tgatctcacg gttggcctcg cacctctcgc tgacgccccc
+     1981 ggcccgttcg atggccctgg ccgcgtagcc ctcgtggatg gtgggttcga ggtcgctgcc
+     2041 ctggtcctcg aggctcctgt ggtcgattct cgcggtctcg tccagccgcg cgttacaggt
+     2101 cttcgcccag gattcgcgca gggccttgag cttggccttc cggtcgagcg ggttcaggga
+     2161 cacgctcgtg cgcttccact gcctgcggcc ccgcttgtcg gtcttctgcc tgccggtctc
+     2221 ggggtcgatc agcggcaccc gctctccccg ctcgtccagc acgtactcca tgcgctgctt
+     2281 gagtctggcc cagccgcccg tggccgggtc gatctgccgg ttggcgacga ggatgtgcgc
+     2341 gtgcggattg ttgccctccc tgtcctcgtg gatggcgtag gtggccgcgt agccgtccgc
+     2401 gttcaggttc tcgcggatgt actcctccag cgcctgcacg cgctgcctgg gggtgaactc
+     2461 gcgcggcagg gccaccacga tcttcttggc cggcctcgcc gtccgtccgg tctcgtgcag
+     2521 ctcgaccgcg ttgaacagca cggcggggtc ggcgaactcg gccggcgcgc cctccggcag
+     2581 cagggtgccg acgcgcagca cgcgctcctt gcgcccgtag tcgtaggtct cgccgcgccg
+     2641 ctcgtcatgc acccgcttgc cggtgatgta cgagagcgtg gccgtggcct tggaaccgct
+     2701 cgcgcggctc acgttggaga cggacagatg gtagatcgcc atcggcttcg gctcctttcg
+     2761 tgatcggcgc gggcggtggg gtgcggggcg gcggccctgc ggcaaggggt tcccaggggt
+     2821 gcggcgagca cccgctgggc ctgccgggag gctcccccgg aagggtggga atccaaaggg
+     2881 caacgcccgt ggcccccgga gggcgcgctt acggaaaatg caacctccgg ttgcatgtaa
+     2941 gtgcgcccta atctttgatt agggatttcc ttgctggtag aatcatatca ccatacggat
+     3001 gatgcagacc atgtaaggag ccgtttcgat ggtgaagagc ctggatgagc agatcaagtc
+     3061 cctgcaggag aggcaggccc agctcaaggc ccgcgagaac gacctcatgg cgcggcgcga
+     3121 gggaacgcga acgcgagggc ccgcaccaag cgcctgatcg aggtcggcgc gatggccgag
+     3181 tcggccgcgg gcttcgaggg cggcgacgag agggccaagg gagcgcgagt agcccgcctc
+     3241 gtgcagctcg gctcgctggt gaagccatgt gctccaccga cgtgatggac aactacacga
+     3301 gccgcgagga cctcaagacc accgtcacca aggccctgga acacaacgtc agaaccagcg
+     3361 atggcatgaa ctggaacctg cacgacctgg tgtacgaggc gctgagcgag gaatgggggc
+     3421 agaagggacg gcgagatcag cgacctctgg gcggacgacg ggccaagcgg ataccagcca
+     3481 ccctcatacg agccggtcaa cccccgaacg caggactccc caaacaccct ccgatggcct
+     3541 gatctgacgt ccaaaaaaag gacgccgtgc gcccttttta aatcttttaa aatcttttta
+     3601 cattctttta ggccctccgc agcccttgga aacattgggc tcagaggatg ttactgggga
+     3661 caaaaagggg aagggagcga accggggaca aaaagggagc gaaccgggga caaaaaggga
+     3721 acgaaccggg gacgacaaaa agggagcgaa ccggggacaa aaagggagcg aaccggggac
+     3781 aaaaagggaa cgaacttagt acaaaagggg aacgaaagtc cacggcagtt atccacattc
+     3841 tcgggttccg ttgttttttc ttcttcgcct ataagtatct gtatacctgt ctagctggga
+     3901 ccccccgctc agccctactc ccacaagggc tgaggtcaca ttcgcctacc taaagcccct
+     3961 caaaaaccta cctaaagccc cctcaaaaac ctacctaaaa gccccctctg tctacctaaa
+     4021 gtacacgggc ttcatgctat actcctactt aaagtacaca ctggattttg gcatgaaaat
+     4081 gcccccgcga gacggcaatc tccgggggcg tggcaaccac gaaaggaccg tgattagcaa
+     4141 tggatgatga tacccgttcc aaggatttga cgctcccgga ggacgagccg tggatgtctc
+     4201 acggcttcat ctcgaagatc gccgcgcagg tct
+//

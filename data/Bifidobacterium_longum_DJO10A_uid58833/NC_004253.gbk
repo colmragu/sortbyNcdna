@@ -1,0 +1,180 @@
+LOCUS       NC_004253               3661 bp    DNA     circular CON 23-MAY-2013
+DEFINITION  Bifidobacterium longum DJO10A plasmid pDOJH10S, complete sequence.
+ACCESSION   NC_004253
+VERSION     NC_004253.1  GI:23307864
+DBLINK      Project: 58833
+            BioProject: PRJNA58833
+KEYWORDS    .
+SOURCE      Bifidobacterium longum DJO10A
+  ORGANISM  Bifidobacterium longum DJO10A
+            Bacteria; Actinobacteria; Actinobacteridae; Bifidobacteriales;
+            Bifidobacteriaceae; Bifidobacterium.
+REFERENCE   1  (bases 1 to 3661)
+  AUTHORS   Lee,J.H. and O'Sullivan,D.J.
+  TITLE     Sequence analysis of two cryptic plasmids from Bifidobacterium
+            longum DJO10A and construction of a shuttle cloning vector
+  JOURNAL   Appl. Environ. Microbiol. 72 (1), 527-535 (2006)
+   PUBMED   16391088
+REFERENCE   2  (bases 1 to 3661)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-MAY-2007) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 3661)
+  AUTHORS   Lee,J.H., Halgerson,J.S. and O'Sullivan,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-AUG-2002) Food Science and Nutrition, University of
+            Minnesota, 262 FScN, 1334 Eckles Ave, St. Paul, MN 55108, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from AF538869.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..3661
+                     /organism="Bifidobacterium longum DJO10A"
+                     /mol_type="genomic DNA"
+                     /strain="DJO10A"
+                     /db_xref="taxon:205913"
+                     /plasmid="pDOJH10S"
+     gene            join(3626..3661,1..876)
+                     /gene="rep"
+                     /locus_tag="pDOJH10S_p1"
+                     /db_xref="GeneID:1257573"
+     CDS             join(3626..3661,1..876)
+                     /gene="rep"
+                     /locus_tag="pDOJH10S_p1"
+                     /note="putative replication protein; RepA; theta
+                     replicase; similar to replication protein of Rhodococcus
+                     rhodochrous plasmid pRC4 encoded by GenBank Accession
+                     Number AB040101"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694604.1"
+                     /db_xref="GI:23307865"
+                     /db_xref="GeneID:1257573"
+                     /translation="MSEICRIIVAMSTELREQWEQLYLPLRPLCTNDFIEGVYRQPRA
+                     KALEGYRYIEANPKTVSDLLVVDIDDANARAMALWEHEGMLPNVIVENPRNGHAHAVW
+                     ALAAPFSRTEYARRKPLALAAAVTEGLRRSCDGDKGYSGLMTKNPLHEAWNSELVTDH
+                     LYGLDELREALEESGDMPPASWKRTKRRNVVGLGRNCHLFETARTWAYREVRHHWGDS
+                     EGLRLAISAEAHEMNAELFPEPLAWSEVEQIAKSIHKWIVTQSRMWRDGPTVYEATFI
+                     TVQSARGKKSGKARRETFELFASEEMT"
+     misc_feature    70..480
+                     /gene="rep"
+                     /locus_tag="pDOJH10S_p1"
+                     /note="Replicase family; Region: Replicase; pfam03090"
+                     /db_xref="CDD:217362"
+     misc_feature    511..735
+                     /gene="rep"
+                     /locus_tag="pDOJH10S_p1"
+                     /note="Primase C terminal 1 (PriCT-1); Region: PriCT_1;
+                     pfam08708"
+                     /db_xref="CDD:219983"
+     gene            complement(1265..2743)
+                     /gene="mob"
+                     /locus_tag="pDOJH10S_p2"
+                     /db_xref="GeneID:1257574"
+     CDS             complement(1265..2743)
+                     /gene="mob"
+                     /locus_tag="pDOJH10S_p2"
+                     /note="putative mobilization protein; MobB; similar to
+                     mobilization protein of Bifidobacterium longum pKJ36
+                     encoded by GenBank Accession Number AF139129"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Mob"
+                     /protein_id="NP_694605.1"
+                     /db_xref="GI:23307866"
+                     /db_xref="GeneID:1257574"
+                     /translation="MAIYSLNISSASSAVAALSYITSMRVRDDARGETYSGFGRRERV
+                     AHVATLLPEGAPSGYADPERLFNAAQAAERGTGVAAKKIMVALPRELDEGQRVLAVER
+                     FIRENLTAGGYAATYAIHLDREGRNPHAHILVANRRIDPRTGEWARLKQKTTFALDGN
+                     GQRIPVIDPKTGVQKVDKRNRKQWKRVTVSENPLGTKAMLLSMRESWADVCNGLLPEG
+                     VRIDHRSLEEQGIDRVPTIHEGYASREMEKRGQPSDRMAINREIGASNRDLAEGDAAV
+                     DDLRAHQSELRRLLRDMADRAVQAFDRMLESIGHGVDPSDAVEAMRDRDGINLMIPRN
+                     AKDSDRPVWHAWLYDRHEWAAIPSHVLREGMRTVGRVRAAIGTALHRWRDAQAARRER
+                     IARSTPAQAPRLADVARQAREDAGQPAHQPRPVRKPEQQPEQQRERPVSLAAAAKEAS
+                     KQLKREQQQEPEPEPALEWNPWDPADPMNLGMGGSQGYGLGL"
+     misc_feature    complement(1997..2626)
+                     /gene="mob"
+                     /locus_tag="pDOJH10S_p2"
+                     /note="MobA/MobL family; Region: MobA_MobL; pfam03389"
+                     /db_xref="CDD:217529"
+     gene            3103..3558
+                     /locus_tag="pDOJH10S_p3"
+                     /db_xref="GeneID:4271003"
+     CDS             3103..3558
+                     /locus_tag="pDOJH10S_p3"
+                     /note="ORFI"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694606.1"
+                     /db_xref="GI:23307867"
+                     /db_xref="GeneID:4271003"
+                     /translation="MPKSFAQQIEDDENKIKRIREHQRMVRAKQAKQERNARTKRLVE
+                     TGAIVEKAHGGAYDDEGRQTFSDGLNGIISVYDPSRGGNVDMRVIDVIDRRIPRLPRS
+                     ETTTGTAAAASRTVQATAPQPAHAQPQSFTPNPQRIEHRTGAQQPDRWA"
+ORIGIN      
+        1 actgaacttc gtgagcagtg ggagcagctt tacctgccgc tgcgcccgct gtgcacgaac
+       61 gacttcatcg agggcgtgta ccggcagccc agggcgaagg cgctggaggg ctaccggtac
+      121 atcgaggcga accccaagac cgtcagcgac ctgctcgtgg tcgacatcga cgacgcgaac
+      181 gcccgcgcga tggccctatg ggagcatgag gggatgctgc ccaacgtgat cgtggagaac
+      241 ccgagaaacg gccacgcgca cgccgtgtgg gcgctggccg ccccgttcag tcgcaccgaa
+      301 tacgcgcggc gcaagccgct cgccctggcc gcggcggtca cggaggggct gcgccgctcg
+      361 tgcgacgggg acaagggata ttcggggctg atgaccaaga acccgctgca cgaggcgtgg
+      421 aacagcgaac tggtcaccga tcacctgtac gggctggacg aactgcgcga ggcgctggag
+      481 gagtccgggg acatgccgcc ggcctcgtgg aagcgcacga aacggcgcaa cgtggtcgga
+      541 ttgggccgca actgccatct gttcgagacg gcgcgcacat gggcgtacag ggaggtgcgc
+      601 caccactggg gagacagcga ggggctgcgg ctggccatct cggccgaggc gcacgaaatg
+      661 aacgccgaac tgttccccga gccactggca tggtcggagg tcgagcagat cgccaagagc
+      721 atccacaagt ggatcgtcac ccaaagccgc atgtggcgcg acggccccac cgtctacgag
+      781 gcgacattca tcaccgtcca aagcgcccga gggaaaaagt caggcaaggc cagacgagaa
+      841 acattcgaac tattcgcgag cgaggagatg acgtaatggt tattcaaacg attcgcaaga
+      901 agcgtcccct gcccgcgcgg caactcgctg aaatgtatga cgttactcca cgcaccatca
+      961 tgagatgggc agcacagacc cgtgctgatt ggattgatga acaggcggct ggacgcgagg
+     1021 cgatccgcgc atatcacgat gatgatggac attcatggac tcaaaccgcc aagcatttcc
+     1081 acctttctct gtccacggtg aaagaacgcg cataccgtgc ccgtaaggag cgtgccgccg
+     1141 aggccgagga aaaagccaga aatgaggtcc acaagaacga ggtgccgctt ttcgactagg
+     1201 ctggcgcttg accccggtgc ctcccgtgca attggagcgc ggcaagggcc agggtctttc
+     1261 acgtctagag gccgaggccg tagccttggc tgccgcccat gccgaggttc atggggtcgg
+     1321 ccgggtccca cgggttccat tcgagtgccg gctctggttc cggctcctgc tgttgctccc
+     1381 gtttgagctg tttgctggcc tccttggccg ctgcggcgag gctcacgggc cgctcccgct
+     1441 gctgctcggg ctgttgctcg ggcttcctga cgggacgggg ctggtgtgcc ggttgtcccg
+     1501 cgtcctcgcg cgcctgacgg gccacgtcag ccaagcgggg cgcctgggcg ggcgtggaac
+     1561 gggcgatccg ctcgcgtctg gcggcctgcg cgtcccgcca acgatgcagg gccgtgccga
+     1621 tggcggcgcg gacgcggccc acagtgcgca ttccctcccg caggacgtgg gagggaatgg
+     1681 ccgcccactc gtgccggtcg tatagccagg catgccagac gggacggtcg gaatccttgg
+     1741 cgttccgggg aatcatgagg ttgatgccgt cccggtcccg catcgcctcc accgcgtcgg
+     1801 acgggtccac gccgtgtccg atgctctcca gcatccggtc gaacgcttgg acggcgcggt
+     1861 cggccatgtc gcgcaggagc cggcggagtt cggactggtg cgcgcgcagg tcgtccacgg
+     1921 cagcgtcgcc ttcggccagg tcgcggttcg aggctccgat ctcgcggttg atggccatgc
+     1981 ggtcggacgg ctggcctcgt ttctccatct cccggctggc gtagccctcg tggatggtgg
+     2041 gcacgcggtc gatgccctgt tcctcaaggc tgcggtggtc gatgcgcacg ccctcgggca
+     2101 gcagcccgtt gcacacgtcg gcccagctct cgcgcatgct cagcagcatg gccttggtgc
+     2161 ccaaagggtt ctcgctgacg gtgacgcgct tccactgctt gcggttgcgc ttgtccacct
+     2221 tctgcacgcc ggtcttcggg tcgatgaccg ggatgcgctg gccgttcccg tccagcgcga
+     2281 acgtggtctt ctgcttgagc cgcgcccatt ccccggtccg agggtcgatc ctgcggttgg
+     2341 cgacgaggat gtgcgcgtgc gggttcctcc cctcgcggtc caaatggatc gcgtaggtcg
+     2401 ccgcgtaccc gccggcggtc aggttctcac ggatgaaccg ttccaccgcc aggacgcgct
+     2461 gcccctcgtc cagctcgcgc ggcagggcca ccatgatctt cttcgcggcc acgcccgtgc
+     2521 cgcgctccgc cgcctgggcg gcgttgaaca ggcgctccgg atccgcgtag ccgctgggcg
+     2581 cgccctcggg caggagcgtc gccacatggg ccacgcgctc cctgcgcccg aacccggaat
+     2641 aggtctcgcc cctcgcgtcg tcccgcacgc gcatcgacgt gatgtacgac aacgcggcca
+     2701 cggcgctgga cgcgctggag atgttcaacg agtagatcgc cacggcgacc tccttccacg
+     2761 cgtgcgggca cggggattct caaggggccg gcccgaggcc ccttgagccc gccgggaggc
+     2821 gcccccggca gggcgggaat ccaaagggcg gagccctgtg gccctccccg ggcaggggcg
+     2881 ggatcgtcaa gggcggagcc cttggccccc tcgggagagc gcactgacac aatgctacct
+     2941 ccggtagcat taagtgcgcc ctccgccatg cggagggacg ggccgcgacc ggatatgcgg
+     3001 ggaacgtcca cgacgcgtct tccgtgtcct ccgtcctgcc ttgtgccgtc gattataatc
+     3061 ctcggataac ggacgatgat tgaaccgatt ggaggaaacg agatgccgaa gagcttcgcg
+     3121 cagcagatcg aggacgacga gaacaagatc aagcgcatcc gggagcacca gcgcatggtc
+     3181 agggccaaac aagccaaaca ggagcgcaac gcccgcacca aaaggctcgt ggagaccgga
+     3241 gcgatagtgg aaaaagcgca cggcggcgcg tacgacgacg aaggacggca gacgttctcg
+     3301 gatggtctga acggcatcat ctcggtctac gacccgtccc gcggcggcaa cgtggacatg
+     3361 agagtcatcg acgtaatcga ccggcgcatc cccagattgc caaggtccga aaccacaaca
+     3421 ggcacggcag cggcggcatc gcgaaccgtg caagccaccg caccacagcc agcccacgcc
+     3481 caaccgcaaa gcttcacgcc caacccccag cgcatcgaac accggacagg agcacagcag
+     3541 ccggatcggt gggcctagcc gggacggcgc agccctcgct ccgctgggct gaaatatctg
+     3601 acttggttcg taacatattt ccgacatgtc ggaaatatgt cgtatcatcg ttgctatgag
+     3661 t
+//

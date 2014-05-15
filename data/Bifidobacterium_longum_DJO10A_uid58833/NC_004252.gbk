@@ -1,0 +1,430 @@
+LOCUS       NC_004252              10073 bp    DNA     circular CON 23-MAY-2013
+DEFINITION  Bifidobacterium longum DJO10A plasmid pDOJH10L, complete sequence.
+ACCESSION   NC_004252
+VERSION     NC_004252.1  GI:23307853
+DBLINK      Project: 58833
+            BioProject: PRJNA58833
+KEYWORDS    .
+SOURCE      Bifidobacterium longum DJO10A
+  ORGANISM  Bifidobacterium longum DJO10A
+            Bacteria; Actinobacteria; Actinobacteridae; Bifidobacteriales;
+            Bifidobacteriaceae; Bifidobacterium.
+REFERENCE   1  (bases 1 to 10073)
+  AUTHORS   Lee,J.H. and O'Sullivan,D.J.
+  TITLE     Sequence analysis of two cryptic plasmids from Bifidobacterium
+            longum DJO10A and construction of a shuttle cloning vector
+  JOURNAL   Appl. Environ. Microbiol. 72 (1), 527-535 (2006)
+   PUBMED   16391088
+REFERENCE   2  (bases 1 to 10073)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-MAY-2007) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 10073)
+  AUTHORS   Lee,J.H., Halgerson,J.S. and O'Sullivan,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-AUG-2002) Food Science and Nutrition, University of
+            Minnesota, 262 FScN, 1334 Eckles Ave, St. Paul, MN 55108, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from AF538868.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..10073
+                     /organism="Bifidobacterium longum DJO10A"
+                     /mol_type="genomic DNA"
+                     /strain="DJO10A"
+                     /db_xref="taxon:205913"
+                     /plasmid="pDOJH10L"
+     gene            join(10052..10073,1..890)
+                     /gene="repA"
+                     /locus_tag="pDOJH10L_p01"
+                     /db_xref="GeneID:1257566"
+     CDS             join(10052..10073,1..890)
+                     /gene="repA"
+                     /locus_tag="pDOJH10L_p01"
+                     /note="replication protein; similar to replication protein
+                     of Bifidobacterium longum plasmid pKJ50 encoded by GenBank
+                     Accession Number U76614"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694594.1"
+                     /db_xref="GI:23307854"
+                     /db_xref="GeneID:1257566"
+                     /translation="MSDEIVKYSNQFNNQALRKFTALDLDLLMAIASRVRDKGTDEVA
+                     FTFEELKRLAGLQRNMTNDEFAKQIANVNRRLLALNFEFQNEEHDIIQFALFAGFVTS
+                     PTKRTLTVSVNSRFSFLLNDLTSQFTRFELAEFTALRSSYAKECYRRLKQYRQTGVWK
+                     VSLEDFRRLLDVPKSYRPSEINKYVLKPIEEELGPLLNLKVHRKYLKKKPGRGRASLV
+                     GFEFEFDPEKVPGGAPAPRVELSGSVVTDEARKSLRDVSKTPVPDLSVPGEGPALDPD
+                     TQAFLDAHGGHGFAGAEGYVSDWPSAA"
+     misc_feature    join(10055..10073,1..650)
+                     /gene="repA"
+                     /locus_tag="pDOJH10L_p01"
+                     /note="Initiator Replication protein; Region: Rep_3;
+                     pfam01051"
+                     /db_xref="CDD:216266"
+     gene            1802..2305
+                     /gene="membA"
+                     /locus_tag="pDOJH10L_p02"
+                     /db_xref="GeneID:1257567"
+     CDS             1802..2305
+                     /gene="membA"
+                     /locus_tag="pDOJH10L_p02"
+                     /note="membrane protein; similar to membrane protein of
+                     Bifidobacterium longum plasmid pKJ50 encoded by GenBank
+                     Accession Number U76614"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="MembA"
+                     /protein_id="NP_694595.1"
+                     /db_xref="GI:23307855"
+                     /db_xref="GeneID:1257567"
+                     /translation="MLRTKHLKMAVVPMTLLALLSTAVPVASAQETTDESFYELTTTP
+                     SGGDMIVGEPGTTILFDSSNGELVDVLPPSEAEDYSVTVSRGCADSNAGCWAGGNALG
+                     DMQFAGTGTATGSWPYRNSYTTGNKSGQITFAINGVTYTPVAAGPWMRIATADGSGVD
+                     GVSVTRW"
+     gene            complement(2369..3481)
+                     /gene="mobA"
+                     /locus_tag="pDOJH10L_p03"
+                     /db_xref="GeneID:1257568"
+     CDS             complement(2369..3481)
+                     /gene="mobA"
+                     /locus_tag="pDOJH10L_p03"
+                     /note="mobilization protein; similar to mobilization
+                     protein of Bifidobacterium longum plasmid pKJ50 encoded by
+                     GenBank Accession Number U76614"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694596.1"
+                     /db_xref="GI:23307856"
+                     /db_xref="GeneID:1257568"
+                     /translation="MRDERTGEAFNGFGRRERVEHVCTMLPEGAPGEYLDPERLFNAV
+                     EMAEKRSDARPAKKIMVALPREFDARERFRALEDFISWNITANGYACTYAIHTDKDGR
+                     NPHAHILVANRRIDPKTGRWAAKEPQASSRDANGRRIPVIDPDTGRQKIGARNRKVWK
+                     RVNVSNNPLDSKEFLERLRREWADSCNALLPGYAVIDHRSFKARGIERIPTIHEGYAS
+                     REMEKRGGRGDLCEENRRIQALNRLLDALRAMIGRLSDQAQGILTAVKRRQRPSGAPQ
+                     APSSPEPAERPQERPQARETPPQAPQEPPKPIRTKKALTDRFKTRLDERLAENERKQA
+                     EKQAEPDMEETWDLSDPADPLNIGMGWGTGGHGLGL"
+     misc_feature    complement(2810..3478)
+                     /gene="mobA"
+                     /locus_tag="pDOJH10L_p03"
+                     /note="MobA/MobL family; Region: MobA_MobL; pfam03389"
+                     /db_xref="CDD:217529"
+     gene            3573..3941
+                     /locus_tag="pDOJH10L_p04"
+                     /db_xref="GeneID:4271002"
+     CDS             3573..3941
+                     /locus_tag="pDOJH10L_p04"
+                     /note="ORFI"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694597.1"
+                     /db_xref="GI:23307857"
+                     /db_xref="GeneID:4271002"
+                     /translation="MAESAAGFEGGDERAKEHIARLVQLGSLVEAMCSTDVMDNYTSR
+                     EDLRATVAKALEHSVKSQGMYENLHDLVYEALSEEWARRDGEDDDPWANDEADGYQPP
+                     SYAPVNPERRNPQAPSDSLI"
+     gene            4427..5485
+                     /gene="rep"
+                     /locus_tag="pDOJH10L_p05"
+                     /db_xref="GeneID:1257569"
+     CDS             4427..5485
+                     /gene="rep"
+                     /locus_tag="pDOJH10L_p05"
+                     /note="similar to replicase of Bifidobacterium asteroides
+                     plasmid pAP1 encoded by GenBank Accession Number Y11549"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="replicase"
+                     /protein_id="NP_694598.1"
+                     /db_xref="GI:23307858"
+                     /db_xref="GeneID:1257569"
+                     /translation="MITLSNSKELDVPGEPFGTTAFISYIMSQVSLPYRRQTAKEIVR
+                     QRGNLVVKYVATGKALPYGKYPRLMEMYACTMIKRGDPSFHTDTRILDLGSSFRDFLK
+                     MLNVPVGGRQLRTIKPQLENYFATAIAISNNTSRETEMAGFTIATKVHIEWLDDKAPI
+                     GRGVAHNWVRFSQEYIDYLKDKPVPVDLPTVAKLSSPMALDIYWWLTKRYYKMHDRVD
+                     ITWKQLYDQFGSDSEMKKFKQNFKKAVDSVLAVYPQARITCGRNYVTLWPSEVSVPTV
+                     SQVRRVEKSAEQRREAEEGHWTSVAGYGDVFTTTELFDVTAARDHFDGTVDAGECRFC
+                     RYDARNREHHARNAGTLF"
+     misc_feature    4604..5095
+                     /gene="rep"
+                     /locus_tag="pDOJH10L_p05"
+                     /note="Plasmid encoded RepA protein; Region: RepA_C;
+                     pfam04796"
+                     /db_xref="CDD:218271"
+     gene            5708..6235
+                     /gene="membB"
+                     /locus_tag="pDOJH10L_p06"
+                     /db_xref="GeneID:1257570"
+     CDS             5708..6235
+                     /gene="membB"
+                     /locus_tag="pDOJH10L_p06"
+                     /note="membrane protein; similar to membrane protein of
+                     Bifidobacterium longum plasmid pKJ36 encoded by GenBank
+                     Accession Number AF139129"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="MembB"
+                     /protein_id="NP_694599.1"
+                     /db_xref="GI:23307859"
+                     /db_xref="GeneID:1257570"
+                     /translation="MSCVGFSACSRCSAMRSARAFTCSGLGFSFSACSACSSCLSSSA
+                     TRPVLGCMSWSWMALVALMRNPLAWSQSLGMSVSSSHGTAPRSFSDCSPATCSAFRSS
+                     LPRLKTFASLASREAARATSMICLAASNSSVPWLLHHSSRFLTSALAPMSFPRIAAVW
+                     SALSASSWRRASPSK"
+     gene            complement(6668..7150)
+                     /gene="mobB"
+                     /locus_tag="pDOJH10L_p07"
+                     /db_xref="GeneID:1257571"
+     CDS             complement(6668..7150)
+                     /gene="mobB"
+                     /locus_tag="pDOJH10L_p07"
+                     /note="mobilization protein; similar to mobilization
+                     protein of Bifidobacterium longum plasmid pKJ36 encoded by
+                     GenBank Accession Number AF139129"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694600.1"
+                     /db_xref="GI:23307860"
+                     /db_xref="GeneID:1257571"
+                     /translation="MSRASGSRATATLSYITGKRVHDERRGETYDYGRKERVLRVGTL
+                     LPEGAPAEFADPAVLFNAVELHETGRTARPAKKIVVALPREFTPRQRVQALEEYIREN
+                     LNADGYAATYAIHEDREGNNPHAHILVANRQIDPATAAGPGSSSAWSTCWTSGESGCR
+                     "
+     misc_feature    complement(<6746..7126)
+                     /gene="mobB"
+                     /locus_tag="pDOJH10L_p07"
+                     /note="MobA/MobL family; Region: MobA_MobL; pfam03389"
+                     /db_xref="CDD:217529"
+     gene            7468..7980
+                     /locus_tag="pDOJH10L_p08"
+                     /db_xref="GeneID:4271000"
+     CDS             7468..7980
+                     /locus_tag="pDOJH10L_p08"
+                     /note="ORFII"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694601.1"
+                     /db_xref="GI:23307861"
+                     /db_xref="GeneID:4271000"
+                     /translation="MVKSLDEQIKSLQERQAQLKARENDLMARRRERERKARTKRLIE
+                     VGAMAESAAGFEGGDERAKEHIARLVQLGSLVEAMCSTDVMDNYTSREDLKTTVTKAL
+                     EHNVRTSDGMNWNLHDLVYEALSEEWGRRDGEISDLWADDGPSGYQPPSYEPVNPERR
+                     TPQTPSDGLI"
+     gene            8278..9171
+                     /gene="repB"
+                     /locus_tag="pDOJH10L_p09"
+                     /db_xref="GeneID:1257572"
+     CDS             8278..9171
+                     /gene="repB"
+                     /locus_tag="pDOJH10L_p09"
+                     /note="replication protein; similar to replication protein
+                     of Bifidobacterium longum plasmid pKJ36 encoded by GenBank
+                     Accession Number AF139129"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694602.1"
+                     /db_xref="GI:23307862"
+                     /db_xref="GeneID:1257572"
+                     /translation="MSNEIVKFSNQFNNVALKKFDAVHLDVLMAIASRVREKGTATVE
+                     FSFEELRGLMRLRKNLTNKQLADKIVQTNARLLALNYMFEDSGKIIQFALFTKFVTDP
+                     QEATLAVGVNEEFAFLLNDLTSQFTRFELAEFADLKSKYAKEFYRRAKQYRSSGIWKI
+                     SRDEFCRLLSVPKSTAEQVRDLNKRVLKPIIEECGPLLGLKIERQYVKRRLSGFVFTF
+                     ARETPPVIDARPVEARKAEDAGHWTSVAGYGEVFTTTELFDVTAARDHFDGTVEAGEC
+                     RFCAFDARNREHHAQNAGRLF"
+     misc_feature    8281..8931
+                     /gene="repB"
+                     /locus_tag="pDOJH10L_p09"
+                     /note="Initiator Replication protein; Region: Rep_3;
+                     pfam01051"
+                     /db_xref="CDD:216266"
+     gene            9373..9792
+                     /locus_tag="pDOJH10L_p10"
+                     /db_xref="GeneID:4271001"
+     CDS             9373..9792
+                     /locus_tag="pDOJH10L_p10"
+                     /note="ORFIII"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_694603.1"
+                     /db_xref="GI:23307863"
+                     /db_xref="GeneID:4271001"
+                     /translation="MTRSVEEQMADIERRMKQLRARKQRIVARENAKARKRRTHLIIR
+                     LGGILSNEGVLGYDEGVWNDEGNRQRLLDMLKAHAAELRAWASDAGVRLPSAESAGVL
+                     REQVRDLPQEPQIQEQPGYGYQPGFQQPQQWQQQPWN"
+ORIGIN      
+        1 actcgaacca gttcaacaat caggcgctgc gcaagttcac cgcgctcgat cttgatttgc
+       61 tgatggccat cgcgtctcgc gtgcgggaca agggcacgga cgaggtggcg ttcacgttcg
+      121 aagaattgaa gcggctggcc ggacttcaga ggaacatgac caacgatgag ttcgccaagc
+      181 agattgccaa tgtgaaccgt cgcctgctcg cgctcaactt cgagttccag aacgaagagc
+      241 acgacatcat ccagttcgcc ctgttcgcag gcttcgtcac cagcccgacc aaacgcacac
+      301 tcaccgtatc ggtgaactcg cgcttctcgt tcctgcttaa cgacctcacc tcgcagttca
+      361 cccgcttcga gctggccgag ttcacggccc tgcgctccag ctacgccaag gagtgctaca
+      421 ggaggctcaa gcagtaccga caaaccggtg tgtggaaggt cagccttgag gacttccgcc
+      481 gactgctcga cgtacccaaa tcgtatcggc cgagcgaaat caacaagtat gttcttaagc
+      541 cgattgagga ggagttggga cctctgctga atctgaaggt gcatcgcaag tacctgaaga
+      601 agaagccggg acgtggccgc gcttcccttg tcgggttcga atttgaattt gacccggaga
+      661 aggtacccgg cggcgctccc gctccgcgcg tggagctgtc cggctccgtg gtgaccgatg
+      721 aggcgaggaa gtcgctcagg gacgtgtcga agacgcccgt gcccgatctg tcggtgccgg
+      781 gcgagggacc ggcgctcgac cctgatactc aggcgttcct cgacgcgcac ggcggtcatg
+      841 gattcgccgg tgccgagggg tatgtctccg actggccgag tgctgcgtga tggtatgtga
+      901 aagcccgtcc gggcttgcgc tcggacgggc cgggtgccgt ttagcggctg tttctcatcg
+      961 cccagacggc cagggccgtg aggatgatgt ccgcggcgat gggatgcacc gccggtgcga
+     1021 gacagacggc gatgaccgcc atcagcaaat caagatcgag cgcggtgaac ttgcggcgga
+     1081 acgagccagg gctgaactgg atgcgtataa ggcggcccac gatggtctga caccattcga
+     1141 ggtggccaga cgcagccatg attcacaggc catgcccgat gatcggatgg agcctggtat
+     1201 cgagccgact cttttctgaa caaggggcct gccgcgggct ccgacccgcg gcaggttgcg
+     1261 ccgtcaacgg cggctggatg ccatcgccca gacggccagg gccgtcacgg tgatgtcggc
+     1321 cgcgatggga tccatcacgg gagcgaggca gatgacgatg accgccatca gccatatcca
+     1381 gggccggccg tgcggcccct tgttacccat gcgcatgtgc tgcgcctttc gttcgggccg
+     1441 cgccgcgact ggcgcggcag cgtcgcccgg cggatgccgg gcggtcggtt ttcgtccctg
+     1501 ctacaagacg tccatcgacg acgccaatcg tatcggctaa gatggaaacg ccggcggagg
+     1561 cgctgctaac ttccccctta cgatcaggcg ggcatgcatg acttttcggg gatggccgat
+     1621 gccggcggga tgggttaccc gccatcccct ttgattgggc cgtggccccg cgtcttcgga
+     1681 tgcggggccg gcgtcttcaa acaccaaccc tttgcattac tggtctgttc aatccaaggt
+     1741 ccaagagcta taatttcctt gtcagacgca cgtctggcat acctaatcag ggggggcaaa
+     1801 aatgttacgt accaagcatt tgaagatggc agtggttcca atgactctgc tggcgctcct
+     1861 gtcgacggca gtcccggtgg catctgctca agaaaccact gacgagtcgt tctatgaact
+     1921 taccaccact ccgtcgggcg gggacatgat tgtcggcgaa ccggggacaa cgattctctt
+     1981 tgattccagc aacggcgaat tggtggacgt gctgccgccg agcgaggctg aagattattc
+     2041 ggtaactgtc tcgcgtggat gcgctgattc caatgctgga tgctgggctg gcgggaacgc
+     2101 tttgggtgac atgcagtttg caggcaccgg aacggcaacg gggtcctggc cgtatcgcaa
+     2161 cagctatacg accggcaata agtcgggaca gatcaccttc gcaatcaatg gagttacata
+     2221 cacccctgtc gcagctggtc cgtggatgcg catcgccacg gcagacggct ctggcgtcga
+     2281 cggcgtatcc gttacccgct ggtaaggatg tctttctaaa tttcgggccg gtgtcttcgg
+     2341 atgccggccc tttgcgttcc cggcgttctc acaggccgag tccgtggcct cccgtgcccc
+     2401 agcccatgcc gatgttgagc gggtcggcgg ggtcggagag gtcccatgtc tcctccatgt
+     2461 cgggttcggc ctgtttttcg gcctgtttgc gttcgttttc ggccagccgc tcgtcaagcc
+     2521 gtgtcttgaa cctgtcggtg agcgcctttt tcgtcctgat gggcttcggg ggttcctgcg
+     2581 gggcctgtgg cggcgtttca cgagcctgcg ggcgttcctg tggcctttcg gccggttcag
+     2641 ggcttgaagg ggcctgtggc gcgcctgagg gccgttggcg gcgtttgacg gccgtcagga
+     2701 tgccttgcgc ttggtcggag agccgcccga tcatggccct aagcgcgtcg aggagccggt
+     2761 tcagggcctg gatgcgccgg ttctcctcgc acaggtcgcc cctgccgccg cgtttctcca
+     2821 tctcgcggct ggcgtatccc tcgtggatgg tggggatgcg ttcgatgccc cgcgccttga
+     2881 agctccgatg gtcgatgacg gcgtatccgg ggagcagggc gttgcaggag tcggcccact
+     2941 cgcgcctgag cctttcgagg aactccttgg agtccaaggg gttgttgctc acgttgacgc
+     3001 gcttccagac cttgcggttt ctggcgccga tcttctgccg tccggtgtcg gggtcgatga
+     3061 cggggatgcg ccggccgttg gcgtcacgcg aactcgcttg cggctctttc gccgcccatc
+     3121 tgccggtctt cgggtcgatg cgccggttgg cgacgaggat gtgcgcgtgg gggttacgtc
+     3181 cgtccttgtc ggtgtggatg gcgtacgtgc aggcgtagcc gttggccgtg atgttccatg
+     3241 agatgaagtc ctccagtgcg cggaagcgtt cgcgggcgtc gaactcgcgg ggcagggcga
+     3301 ccatgatctt cttcgcgggc ctcgcgtcgg aacgtttctc ggccatctcg acggcgttga
+     3361 acaaacgctc cgggtcgagg tactcgccgg gcgcgccctc gggcagcatc gtgcatacat
+     3421 gctcgacgcg ctccctgcgg ccgaacccgt tgaacgcctc gccggtgcgc tcgtcgcgca
+     3481 tccgacgcga ggcccgcgag gacgacctca aggcgcggcg cagggaacgc gaacgcaagg
+     3541 cccgaaccaa gcgcctgatc gaggtcggcg cgatggccga gtcggccgcc ggcttcgagg
+     3601 gaggcgacga gagggccaag gaacacatcg cccgcctcgt gcagctcggc tccctggtgg
+     3661 aagccatgtg ctccaccgac gtgatggaca actacacgag ccgcgaggac ctcagggcca
+     3721 ccgtcgccaa ggccctggag catagcgtca agagccaggg catgtacgaa aacctgcacg
+     3781 acctggtgta cgaggcgctg agcgaggaat gggccagaag ggacggcgag gacgacgacc
+     3841 catgggccaa cgacgaggcg gacggatacc agccgccctc atacgcgccc gtcaaccccg
+     3901 aacgcaggaa tccccaagcg ccctccgaca gcctgatctg actaatcttt ttacattctt
+     3961 ttaggcccct cgcagccctt ggaaacactg ggctcagagg gtgctactta gtacaaaagg
+     4021 ggagcgaacc tagtacaaaa ggggagctac atacaccttt gcaccatttt gtccctaaag
+     4081 tccctccaaa aggtgggaaa agcacttcat gtttttgatt gattctctag taagcgtcta
+     4141 cgcgtatacg ggggactacc tctcagacct actcccgtaa gggctgagag gggatagcgg
+     4201 tacctaaagc acctcaaatg gtacctaaag cacctcaaat ggtacctaaa gcacctcaaa
+     4261 agtacctaaa gtacacgcac tcagtgtgta ctttagggac ctgtatccgt gtactttagg
+     4321 tacttatgtg atagggtacc taaagtacac ggataaaatc gttggaaact agaggaaacc
+     4381 cccgcgaggc tggcacctcc gggggcgtgg caaccactga aacggagtga ttacgttgag
+     4441 taattctaag gaactggacg tacccggcga gccgttcggc acgacggcgt tcatcagcta
+     4501 catcatgtcg caggtctccc tgccctaccg ccgccagacg gccaaggaga tcgttaggca
+     4561 gcggggcaat ctcgtcgtga aatacgtcgc cacgggcaag gcgctgccct atggcaagta
+     4621 cccgaggctc atggagatgt acgcctgcac gatgattaaa cgcggcgacc ccagcttcca
+     4681 taccgatacc aggattctcg atctcggctc gtcgttccgc gatttcctca aaatgctgaa
+     4741 cgttcccgtg ggtggccgtc agcttcgaac gataaagccg cagcttgaga actacttcgc
+     4801 cactgccatc gcgatctcga acaacacatc gagggaaacc gagatggccg ggttcaccat
+     4861 cgccaccaag gttcacatcg aatggctgga cgataaggct ccgattggtc gtggggtcgc
+     4921 ccacaactgg gtgagattca gccaggagta catcgactac ctgaaggaca agcccgtgcc
+     4981 ggtcgatctt cccaccgtgg cgaagctctc cagcccgatg gccttggaca tctactggtg
+     5041 gctgaccaag cgctactaca agatgcacga ccgcgtggat atcacctgga agcagctcta
+     5101 cgaccagttc ggcagcgact cagagatgaa gaaattcaag caaaatttca agaaggccgt
+     5161 tgattcggtg ctcgcagtgt atccgcaggc gagaatcacc tgcggaagga actacgtgac
+     5221 cctgtggccg tccgaggtgt cagtgcccac ggtctcccag gtgcgcaggg tggagaagtc
+     5281 ggccgagcaa cggcgcgagg ccgaggaggg ccattggacg agcgtcgccg gatacggcga
+     5341 cgtgttcacg accacggagc tgttcgacgt gacggcggcg cgtgaccatt tcgacggcac
+     5401 cgtggacgcc ggggaatgcc gtttctgccg gtatgacgcg cgcaaccgcg agcatcacgc
+     5461 caggaacgcg gggacgctgt tctagcggct gtggccgtgt ctctggggcg gttgcacgct
+     5521 ccatgggtcg atctgccgct gttcggcttc ctgctggcct gtgcgcctgt ctgcgcgctg
+     5581 cctgatctcc ctgagcaggt cggccttggt cctgggggcg ctgcgctcct cgaacgggct
+     5641 gctctccccc aggtcctcgg gctcgctcag gtccatcggc tcatcgccgg acggttcggg
+     5701 cctattcatg tcctgcgtcg ggttctccgc ctgctctcgt tgttcggcca tgcgcagtgc
+     5761 gagggccttc acctgttcgg ggcttggctt ctcgttctcg gcctgctcgg cctgttcgag
+     5821 ctgcctttcc agttcggcca cgaggccggt cctcggctgc atgtcgtggt cgtggatggc
+     5881 cttggtggcc ctcatgcgga acccgttggc ctggtcccag tcgctcggga tgtcggtgtc
+     5941 ttcgagccat ggcaccgccc cgcgcagctt ctcggactgc tccccggcca cctgttcggc
+     6001 gttccgcagc agcctgccgc gcttgaagac gttcgcgtcc ctggcctcgc gcgaggcggc
+     6061 tcgcgccacg tcgatgatct gcttggcggc ctcaaactcc tcggtgccgt ggctcctcca
+     6121 ccactcctcg cggttcctca cgtcggcctt ggctcccatg agttttccac ggatcgctgc
+     6181 cgtgtggtcg gccctgtcgg cttcgagctg gcggcgcgcg tcgccctcga agtagcgcca
+     6241 gttcggctcc ctggccggtt ccggcctcgc ctggcgttgg cgcagctgcc tgatcttggc
+     6301 ggcgaacagc tcgcccaggc ggtcgaatat ccggccgagt tcggtgcgga tggcggtcag
+     6361 caggccgttg ctgcgcctga tctcacggtt ggcctcgcac ctctcgctga cgcccccggc
+     6421 ccgttcgatg gccctggccg cgtagccctc gtggatggtg ggttcgaggt cgctgccctg
+     6481 gtcctcgagg ctcctgtggt cgattctcgc ggtctcgtcc agccgcgcgc gttacaggtc
+     6541 ttcgcccagg attcgcgcag ggccttgagc ttggccttcc ggtcgagcgg gttcagggac
+     6601 acgctcgtgc gcttccactg cctgcggccc cgcttgtcgg tcttctgcct gccggtctcg
+     6661 gggtcgatca gcggcacccg ctctccccgc tcgtccagca cgtactccat gcgctgcttg
+     6721 agcctggccc agccgccgtg gccgggtcga tctgccggtt ggcgacgagg atgtgcgcgt
+     6781 gcggattgtt gccctccctg tcctcgtgga tggcgtaggt ggccgcgtag ccgtccgcgt
+     6841 tcaggttctc gcggatgtac tcctccagcg cctgcacgcg ctgcctgggg gtgaactcgc
+     6901 gcggcagggc caccacgatc ttcttggccg gcctcgccgt ccgtccggtc tcgtgcagct
+     6961 cgaccgcgtt gaacagcacg gcggggtcgg cgaactcggc cggcgcgccc tccggcagca
+     7021 gggtgccgac gcgcagcacg cgctccttgc gcccgtagtc gtaggtctcg ccgcgccgct
+     7081 cgtcatgcac ccgcttgccg gtgatgtacg agagcgtggc cgtggccctg gaaccgctcg
+     7141 cgcggctcac gttggagacg gactagatgg tagatcgcca tcggcttcgg ctcctttcgt
+     7201 gatcggccag ggcggcgggg tgcggggcgg cggccctgcg gcaaggggtt cccaggggtg
+     7261 cggcgagcac ccgctgggcc tgccgggagg ctcccccgga agggtgggaa tccaaagggc
+     7321 aaggcccgtg gcccccggag ggcgcgctta cggaaaatgc aacctccggt tgcatgtaag
+     7381 tgcgccctaa tctttgatta gggatttcct tgctggtaga atcatatcac catacggatg
+     7441 atgcagacca tgtaaggagc cgtttcgatg gtgaagagcc tggatgagca gatcaagtcc
+     7501 ctgcaggaga ggcaggctca gctcaaggcc cgcgagaacg acctcatggc gcggcgcagg
+     7561 gaacgcgaac gcaaggcccg aaccaagcgc ctgatcgagg tcggcgcgat ggccgagtcg
+     7621 gccgccggct tcgagggagg cgacgagagg gccaaggaac acatcgcccg cctcgtgcag
+     7681 ctcggctccc tggtggaagc catgtgctcc accgacgtga tggacaacta cacgagccgc
+     7741 gaggacctca agaccaccgt caccaaggcc ctggaacaca acgtcagaac cagcgatggc
+     7801 atgaactgga acctgcacga cctggtgtac gaggcgctga gcgaggaatg gggcagaagg
+     7861 gacggcgaga tcagcgacct ctgggcggac gacgggccaa gcggatacca gccaccctca
+     7921 tacgagccgg tcaaccccga acgcaggact ccccaaacac cctccgatgg cctgatctga
+     7981 cgtccaaaaa aaggcgccgt gcgccctttt taaatctttt aaaatctttt tacattcttt
+     8041 taggccctcc gcagcccttg gaaacattgg gctcagagga tgttactggg gacaaaaagg
+     8101 gagcgaaccg gggacaaaaa gggagcgaac cggggacaaa aagggagcga accggggaca
+     8161 aaaagggagc gaaccgggga tgttgctaaa atgtgtctcc tttttgatca aggtggggac
+     8221 tcaaattatt tgtggactaa cttaatttga gtcccccata ggagctatgc taaggccatg
+     8281 tccaatgaga tcgtgaagtt cagcaaccag ttcaacaacg tggcactgaa gaagttcgac
+     8341 gccgtgcacc tggacgtgct catggcgatc gcctcaaggg tgagggagaa gggcacggcc
+     8401 acggtggagt tctcgttcga ggagctgcgc ggcctcatgc ggctgaggaa gaacctgacc
+     8461 aacaagcagc tggcagacaa gatcgtgcag acgaacgcgc gcctgctggc gctgaactac
+     8521 atgttcgagg attcgggcaa gatcatccag ttcgcgctgt tcacgaagtt cgtcaccgac
+     8581 ccgcaggagg cgaccctcgc ggttggggtc aacgaggagt tcgctttcct gctcaacgac
+     8641 ctgaccagcc agttcacgcg cttcgagctg gccgagttcg ccgacctcaa aagcaagtac
+     8701 gccaaggagt tctaccgcag ggccaaacaa taccgcagct ccggaatctg gaagatcagc
+     8761 cgcgacgagt tctgccgact gctcagcgtt cccaaatcca cagccgagca agtgagagat
+     8821 ctcaacaaac gagtcctcaa gccgattatc gaggagtgtg ggccactcct tggactgaag
+     8881 atcgagcgcc agtacgtgaa acgcaggctg tcggggttcg tgttcacgtt cgcccgcgag
+     8941 acccctccgg tgatcgacgc caggcccgtg gaggcgagga aggcggagga tgcgggccat
+     9001 tggacgagcg tcgccgggta cggcgaggtg ttcacgacca ctgagctgtt cgacgtgacg
+     9061 gccgcgcgtg accacttcga cggcaccgtg gaggccgggg aatgccgttt ctgcgcgttt
+     9121 gacgcgcgca accgcgaaca tcatgcgcag aacgccggaa ggctgttcta gcggccgtgg
+     9181 ccgtcatgcg cgcggaaatc ggcgggggcg gcacgttcgg cattgatgaa cgcttcgccc
+     9241 tcgcggcttg gatgtccaaa ccggctccgt tcttccgggt ttaggtttgg tgtgtagacg
+     9301 ccgtgccccg tgccgtgctg ccgtggggtc tagcgtcctg attgataacc gacggaacgc
+     9361 agggaggaac cgatgaccag gagcgtcgag gagcagatgg ccgacatcga gcgccggatg
+     9421 aagcagctca gggcgcgcaa acagcgcatc gtggctaggg agaacgccaa ggcgcgcaag
+     9481 cggcgcaccc atctgatcat ccggctgggc ggcatcctct ccaacgaggg cgtgcttggc
+     9541 tacgacgagg gcgtctggaa cgacgagggc aaccggcaaa ggctgctgga catgctcaag
+     9601 gcccatgccg ccgaactgcg cgcatgggcc tctgacgcgg gcgtgaggct ccccagcgct
+     9661 gagtcggcgg gtgtgctgcg ggaacaggtt cgtgacctgc cccaagagcc tcagatacag
+     9721 gagcagccgg gctatggcta ccagcccgga ttccaacagc cacagcaatg gcagcagcag
+     9781 ccttggaact gagtcggttt cttctcttca tcggggcgga gccccttttt atagaatctt
+     9841 ttgtactctt ttagactccc cgcaggcctt acggcagtag gggaaacgca ctattaaagg
+     9901 ggagaaaatg ggagattaaa ggggagattt tgggaattat ttaggggagg ttttgggaga
+     9961 ataaaggacg cttttgagga ataaaaacga ggttttggga gaataaaggg tagaaaatat
+    10021 aaaaatctcg tttttatggt agaatgcagt catgtccgat gagatcgtga agt
+//

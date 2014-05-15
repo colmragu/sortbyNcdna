@@ -1,0 +1,169 @@
+LOCUS       NC_015066               3624 bp    DNA     circular CON 06-JUL-2013
+DEFINITION  Bifidobacterium longum subsp. infantis 157F plasmid p157F-NC2,
+            complete sequence.
+ACCESSION   NC_015066
+VERSION     NC_015066.1  GI:322690189
+DBLINK      Project: 62693
+            BioProject: PRJNA62693
+KEYWORDS    .
+SOURCE      Bifidobacterium longum subsp. infantis 157F
+  ORGANISM  Bifidobacterium longum subsp. infantis 157F
+            Bacteria; Actinobacteria; Actinobacteridae; Bifidobacteriales;
+            Bifidobacteriaceae; Bifidobacterium.
+REFERENCE   1
+  AUTHORS   Fukuda,S., Toh,H., Hase,K., Oshima,K., Nakanishi,Y., Yoshimura,K.,
+            Tobe,T., Clarke,J.M., Topping,D.L., Suzuki,T., Taylor,T.D.,
+            Itoh,K., Kikuchi,J., Morita,H., Hattori,M. and Ohno,H.
+  TITLE     Bifidobacteria can protect from enteropathogenic infection through
+            production of acetate
+  JOURNAL   Nature 469 (7331), 543-547 (2011)
+   PUBMED   21270894
+REFERENCE   2  (bases 1 to 3624)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-FEB-2011) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 3624)
+  AUTHORS   Hattori,M., Toh,H., Oshima,K., Itoh,K. and Ohno,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-OCT-2008) Contact:Masahira Hattori University of
+            Tokyo, Graduate School of Frontier Sciences; 5-1-5 Kashiwanoha,
+            Kashiwa, Chiba 277-8562, Japan URL
+            :http://www.cb.k.u-tokyo.ac.jp/hattorilab/
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AP010892.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..3624
+                     /organism="Bifidobacterium longum subsp. infantis 157F"
+                     /mol_type="genomic DNA"
+                     /strain="157F"
+                     /sub_species="infantis"
+                     /db_xref="taxon:565040"
+                     /plasmid="p157F-NC2"
+     gene            1..1701
+                     /locus_tag="BLIF_P2-0001"
+                     /db_xref="GeneID:10208766"
+     CDS             1..1701
+                     /locus_tag="BLIF_P2-0001"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mobilization protein"
+                     /protein_id="YP_004219761.1"
+                     /db_xref="GI:322690190"
+                     /db_xref="GeneID:10208766"
+                     /translation="MAIYHLSVSNVSRASGSRATATLSYITGKRVHDERRGETYDYGR
+                     KERVLRVGTLLPEGASAEFADPAVLFNAVELHETGRTARPAKKIVVALPREFTPRQRV
+                     QALEEYIRENLNADGYAATYAIHEDREGNNPHAHILVANRQIDPATGGWARLKQRMEY
+                     VLDERGERVPLIDPETGRQKTDKRGRRQWKRMSVSLNPLDRKAKLKALRESWAKTCNA
+                     RLDETARIDHRSLEDQGSDLEPTIHEGYAARAIERAGGVSERCEANREIRRSNGLLTA
+                     IRTELGRIFDRLGELFAAKIRQLRQRQARPEPAREPNWRYFEGDARRQLEADRADHTA
+                     AIRGKLMGAKADVRNREEWWRSHGTEEFEAAKQIIDVARAASRGARDANVFKRGRLLR
+                     NAEQVAGEQSEKLRGAVPWLEDTDIPSDWDQANRFRMRTTKAIHDHDMQPRTGLVDEL
+                     ERQLEQAERAEGEKPSPEQVKALALRMAEQRERAAEDPTQDMNRPEPSGDEPLDLSEP
+                     EDLGESGPFEERSAPRTKADLLREIRQRADRRTGQQEAEQRQIDPWQAQPPQRRGHGR
+                     "
+     misc_feature    55..759
+                     /locus_tag="BLIF_P2-0001"
+                     /note="MobA/MobL family; Region: MobA_MobL; pfam03389"
+                     /db_xref="CDD:217529"
+     gene            complement(1698..2597)
+                     /locus_tag="BLIF_P2-0002"
+                     /db_xref="GeneID:10208764"
+     CDS             complement(1698..2597)
+                     /locus_tag="BLIF_P2-0002"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="replication protein"
+                     /protein_id="YP_004219762.1"
+                     /db_xref="GI:322690191"
+                     /db_xref="GeneID:10208764"
+                     /translation="MSNEIVKFSNQFNNVALKKFDAVHLDVLMAIASRVREKGTATVE
+                     FSFEELRGLMRLRKNLTNKQLADKIVQTNARLLALNYMFEDSGKIIQFALFTKFVTDP
+                     QEATLAVGVNEEFAFLLNDLTSQFTRFELAEFADLKSKYAKEFYRRAKQYRSSGIWKI
+                     SRDEFCRLLGVSDSTAKSTANLNRVVLKTIAEECGPLLGLKIERQYVKRRLSGFVFTF
+                     ARETPPVIDARPVEARKTDGDGKGHWTSVAGYGEVFTTTELFDVTAARDHFDGTVEAG
+                     ECRFCAFDARNREHHARNAGRLF"
+     misc_feature    complement(1944..2594)
+                     /locus_tag="BLIF_P2-0002"
+                     /note="Initiator Replication protein; Region: Rep_3;
+                     pfam01051"
+                     /db_xref="CDD:216266"
+     gene            complement(2826..3338)
+                     /locus_tag="BLIF_P2-0003"
+                     /db_xref="GeneID:10208765"
+     CDS             complement(2826..3338)
+                     /locus_tag="BLIF_P2-0003"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="YP_004219763.1"
+                     /db_xref="GI:322690192"
+                     /db_xref="GeneID:10208765"
+                     /translation="MVKSLDEQIKSLQERQAQLKAREDDLKARRRERERKARTKRLIE
+                     VGAMAESAAGFEGGDERAKEHIARLVQLGSLVEAMCSTDVMDNYTSREDLRATVAKAL
+                     EHNVRTSDGMNWNLQDLVYEALSEEWRKRDGEDDDPWENHGPDGYQPPSYEPVNPERR
+                     TAQTPSDGLI"
+ORIGIN      
+        1 atggcgatct accatctgtc cgtctccaac gtgagccgcg cgagcggttc cagggccacg
+       61 gccacgctct cgtacatcac cggcaagcgg gtgcatgacg agcggcgcgg cgagacctac
+      121 gactacgggc gcaaggagcg cgtgctgcgc gtcggcaccc tgctgccgga gggcgcgtcg
+      181 gccgagttcg ccgaccccgc cgtgctgttc aacgcggtcg agctgcacga gaccggacgg
+      241 acggcgaggc cggccaagaa gatcgtggtg gccctgccgc gcgagttcac ccccaggcag
+      301 cgcgtgcagg cgctggagga gtacatccgc gagaacctga acgcggacgg ctacgcggcc
+      361 acctacgcca tccacgagga cagggagggc aacaatccgc acgcgcacat cctcgtcgcc
+      421 aaccggcaga tcgacccggc cacgggcggc tgggccaggc tcaagcagcg catggagtac
+      481 gtgctggacg agcggggaga gcgggtgccg ctgatcgacc ccgagaccgg caggcagaag
+      541 accgacaagc ggggccgcag gcagtggaag cgcatgagcg tgtccctgaa cccgctcgac
+      601 cggaaggcca agctcaaggc cctgcgcgaa tcctgggcga agacctgtaa cgcgcggctg
+      661 gacgagaccg cgagaatcga ccacaggagc ctcgaggatc agggcagcga cctcgaaccc
+      721 accatccacg agggctacgc ggccagggcc atcgaacggg ccgggggcgt cagcgagagg
+      781 tgcgaggcca accgtgagat caggcgcagc aacggcctgc tgaccgccat ccgcaccgaa
+      841 ctcggccgga tattcgaccg cctgggcgag ctgttcgccg ccaagatcag gcagctgcgc
+      901 caacgccagg cgaggccgga accggccagg gagccgaact ggcgctactt cgagggcgac
+      961 gcgcgccgcc agctcgaagc cgacagggcc gaccacacgg cagcgatccg tggaaaactc
+     1021 atgggagcca aggccgacgt gaggaaccgc gaggagtggt ggaggagcca cggcaccgag
+     1081 gagtttgagg ccgccaagca gatcatcgac gtggcgcgag ccgcctcgcg cggggccagg
+     1141 gacgcgaacg tcttcaagcg cggcaggctg ctgcggaacg ccgaacaggt ggccggggag
+     1201 cagtccgaga agctgcgcgg ggcggtgcca tggctcgaag acaccgacat cccgagcgac
+     1261 tgggaccagg ccaacaggtt ccgcatgagg accaccaagg ccatccacga ccacgacatg
+     1321 cagccgagga ccggcctcgt ggacgaactg gagaggcagc tcgaacaggc cgagcgggcc
+     1381 gagggcgaga agccaagccc cgaacaggtg aaggccctcg cactgcgcat ggccgaacag
+     1441 cgtgaacggg cggcggagga cccgacgcag gacatgaacc gacccgagcc gtccggtgac
+     1501 gagccgttgg acctgagcga gcccgaggac ctgggggaga gcggcccgtt cgaggagcga
+     1561 agcgccccca ggaccaaggc cgacctgctc agggagatca ggcagcgcgc agacaggcgc
+     1621 acaggccagc aggaggccga acagcggcag atcgacccat ggcaggcgca accgccccag
+     1681 aggcgcggac acggccgcta gaacagcctt ccggcgttcc gcgcatgatg ttcgcggttg
+     1741 cgcgcgtcaa acgcgcagaa acggcattcc ccggcctcca cggtgccgtc gaagtggtca
+     1801 cgcgcggctg tcacgtcgaa cagctccgtg gtcgtgaaca cctcgccata ccccgccacg
+     1861 ctcgtccaat ggcccttgcc gtcgccgtcc gtcttcctcg cctccacggg cctggcgtcg
+     1921 atcaccggag gggtctcgcg ggcgaacgtg aacacgaagc ccgacagcct gcgtttcacg
+     1981 tactggcgct cgatcttcag gccaaggaga gggccacact cttcggcgat cgtcttcagc
+     2041 acgaccctgt tcaggttggc ggtggatttt gccgtggaat cggatacgcc aagcagtcgg
+     2101 cagaactcat cgcggctgat cttccagatt cccgagctgc ggtactgctt ggcgcgcctg
+     2161 tagaactcct tggcgtactt gctcttgagg tcggcgaact cggccagctc gaagcgcgtg
+     2221 aactggctgg tcaggtcgtt gagcaggaaa gcgaactcct cgttgacccc aaccgcgaga
+     2281 gtcgcctcct gcgggtcggt gacgaacttc gtgaacagcg cgaactggat gatcttgccc
+     2341 gaatcctcga acatgtagtt cagcgccagc agtcgcgcgt tcgtctgcac gatcttgtct
+     2401 gccagctgct tgttggtcag gttcttcctc aatcgcatga ggccgcgcag ctcctcgaac
+     2461 gagaactcca ccgtggccgt gcccttctcc ctcacccttg aggcgatcgc catgagcacg
+     2521 tccaggtgca cggcgtcgaa cttcttcagc gcgacgttgt tgaactggtt gctgaacttc
+     2581 acgatctcat tggacatgac tccatactag tacaaagttt atttatttac tagttcgctc
+     2641 cccttttgta ctaagttcgc tccccttttg tactaagttc gctccccttt tgtactaagt
+     2701 tcgctcccct tttgtactaa gtaccgtccg aaacccgttg ggagagtagg gctgcggagg
+     2761 gcctaaaaga atgtaaaaag attttaaaag atttaaaaag ggtgcacggc gccttttttc
+     2821 ggacgtcaga tcaggccatc ggagggcgtc tgggcggtcc tgcgttcggg gttgaccggc
+     2881 tcgtatgagg gcggctggta tccgtccggc ccgtggttct cccatgggtc gtcgtcctcg
+     2941 ccgtcccttt tgcgccattc ctcgctcagc gcctcgtaga cgaggtcctg gaggttccag
+     3001 ttcatgccat cgctggtcct gacgttgtgt tctagggcct tggcgacggt ggccctgagg
+     3061 tcctcgcggc tcgtgtagtt gtccatcacg tcggtggagc acatggcttc caccagggag
+     3121 ccgagctgca cgaggcgggc gatgtgttcc ttggccctct cgtcgcctcc ctcgaagccg
+     3181 gcggccgact cggccatcgc gccgacctcg atcaggcgct tggttcgggc cttgcgttcg
+     3241 cgttccctgc gccgcgcctt gaggtcgtcc tcgcgggcct tgagctgggc ctgcctctcc
+     3301 tgcagggact tgatctgctc atccaggctc ttcaccatcg aaacggctcc ttacatggtc
+     3361 tgcatcatcc gtatagtgat atgattctac cagcaaggaa atccctaatc aaagattagg
+     3421 gcgcacttac atgcaaccgg aggttgcatt ttccgtaagc gcgccctccg ggggccacgg
+     3481 gccttgccct ttggattccc acccttccgg gggagcctcc cggcaggccc agcgggtgct
+     3541 cgccgcaccc ctgggaaccc cttgccgcag ggccgccgcc ccgcaccccg ccgccctggc
+     3601 cgatcacgaa aggagccgaa gccg
+//

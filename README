@@ -1,0 +1,45 @@
+#####################################################################################
+
+#####################################################################################
+sortbyNcdna is a program that sorts a gbk file by the non-coding dna
+#####################################################################################
+Installation:
+
+I have only tested on Ubuntu linux. Should work on the linux family and windows but I have not tested it. 
+
+You must install biopython which is used to read in the gbk files. 
+
+Then clone the respoitory
+
+Usage: 
+
+run "python sortbyNCdna.py input.gbk output" this open input.gbk sort genes according the ncdna that proceeds them. It will then write the output to the file output.
+
+Examples:
+"python sortbyNcdna.py data/NC_009930.gbk outputfile"
+
+"python sortbyNcdna.py data/NC_017100.gbk data/NC_017118.gbk data/NC_009931.gbk outputfile \n"
+Sorts multiple files
+
+"python sortbyNcdna.py data/*.gbk outputfile"
+Uses the wild card * to sort all .gbk files in a directory
+
+Data:
+Inside the data folder is a bash script (download.sh )that will download and extract all the Bacteria gbk files from ncbi ftp server. You use any gbk file that you have. Just point to it when calling the command.
+
+Output:
+The first line of each seaction is the Non coding DNA that proceeds a series of genes. This is followed by a list of the genes that are proceeded by this NCDNA including GeneID, notes and information about the gene, the start and finish point of gene in the organisms DNA, and the file that the gene was found in.
+
+example 
+CATG
+CDD:216070 (['Glycosyl hydrolases family 2; Region: Glyco_hydro_2; pfam00703'], 1443454, 1443766, 'data/Bifidobacterium_longum_KACC_91563_uid158861/NC_017221.gbk')
+CDD:250069 (['Glycosyl hydrolases family 2; Region: Glyco_hydro_2; pfam00703'], 791068, 791380, 'data/Bifidobacterium_longum_NCC2705_uid57939/NC_004307.gbk')
+CDD:217247 (['Glycosyl hydrolases family 2, TIM barrel domain; Region: Glyco_hydro_2_C; pfam02836'], 1695783, 1696677, 'data/Bifidobacterium_bifidum_S17_uid59545/NC_014616.gbk')
+CDD:251563 (['Glycosyl hydrolases family 2, TIM barrel domain; Region: Glyco_hydro_2_C; pfam02836'], 1723379, 1724273, 'data/Bifidobacterium_bifidum_PRL2010_uid59883/NC_014638.gbk')
+
+Results and Corrilations: 
+The point of sorting genes by NCDNA is discussed in another README file which is stored in the results folder.
+
+Limitations:
+The program uses python dictionarys to store the sorted genes. The main limitation of the program is the ram on your computer. The larger the number of files that you sort the larger the ram required. I have tested on a computer 1.5 GB and it can handle 170 gbk files. But as the dict grows towards the size of your computers ram performance will degrade and processing will eventually stop. It is possible to use a database for storage instead of a dict but this will increse the running time. Another possibility is to break large prcessing tasks and into smaller once and then merge the dicts. This is possible but I have not added this feature yet.
+
