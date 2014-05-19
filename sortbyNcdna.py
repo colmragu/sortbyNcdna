@@ -48,13 +48,13 @@ def addfeaturetodict(ncdna,sortbyNCDNA, feature, locus):
     sortbyNCDNA[ncdna]={}
   if not sortbyNCDNA[ncdna].has_key(feature.qualifiers["db_xref"][0]):
     sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] ={} 
-  sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] =colourstring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end) ,locus) #add more information
+  sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end) ,locus) #add more information
   return(sortbyNCDNA) 
-def colourstring(note, start, end , locus):
+def formatestring(note, start, end , locus):
 
-  colouredString = note ,start ,end, locus
+  formatedString = note ,start ,end, locus
 
-  return(colouredString)
+  return(formatedString)
 
 def pad_gb_features(feature):
   ### Make sure all gb objects conatain a dic entry for note, db_xref
