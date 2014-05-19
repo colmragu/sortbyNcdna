@@ -77,15 +77,22 @@ def print_sorted_contains_note(ncdna_sort, note , outputfile):
   f = open(outputfile, "w")
   matches=[]
   for ncdna in sorted(ncdna_sort.keys(), key=len):
-    for organizm in sorted(ncdna_sort[ncdna]):
-      for gene in ncdna_sort[ncdna][organizm].keys():
-        if note.lower() in str(ncdna_sort[ncdna][organizm][gene][0]).lower():
-          matches.append(ncdna)
-          break
+    key = search_string_in_notes(note, ncdna_sort, ncdna)
+    if key != 0:
+      matches.append(ncdna)
+    else:
+      continue
   for match in sorted(matches, key=len):
     print (match, file=f)
     print_element(ncdna_sort,match, f)
   f.close()
+
+def search_string_in_notes(note, ncdna_sort, ncdna):
+  for organizm in sorted(ncdna_sort[ncdna]):
+    for gene in ncdna_sort[ncdna][organizm].keys():
+      if note.lower() in str(ncdna_sort[ncdna][organizm][gene][0]).lower():
+        return 1
+  return 0
 
 def print_element(ncdna_sort,ncdna, f):
   for organizm in sorted(ncdna_sort[ncdna]):
