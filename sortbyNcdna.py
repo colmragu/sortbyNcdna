@@ -46,14 +46,15 @@ def sortbyNcdna(sortbyNCDNA, gb_file):
 def addfeaturetodict(ncdna,sortbyNCDNA, feature, locus):
   if not sortbyNCDNA.has_key(ncdna):
     sortbyNCDNA[ncdna]={}
-  if not sortbyNCDNA[ncdna].has_key(feature.qualifiers["db_xref"][0]):
-    sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] ={} 
-  sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end) ,locus) #add more information
+  if not sortbyNCDNA[ncdna].has_key(locus):
+    sortbyNCDNA[ncdna][locus]={}
+  if not sortbyNCDNA[ncdna][locus].has_key(feature.qualifiers["db_xref"][0]):
+    sortbyNCDNA[ncdna][locus][feature.qualifiers["db_xref"][0]] ={} 
+  sortbyNCDNA[ncdna][locus][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end)) #add more information
   return(sortbyNCDNA) 
-def formatestring(note, start, end , locus):
 
-  formatedString = note ,start ,end, locus
-
+def formatestring(note, start, end ):
+  formatedString = note ,start ,end
   return(formatedString)
 
 def pad_gb_features(feature):
@@ -68,10 +69,9 @@ def print_sorted(ncdna_sort, outputfile):
   f = open(outputfile, "w")
   for ncdna in sorted(ncdna_sort.keys(), key=len): 
     print (ncdna, file=f)
-    for gene_id in ncdna_sort[ncdna]:
-      print (gene_id, file=f, end=" ")
-
-      print (ncdna_sort[ncdna][gene_id], file=f)
+    for organizm in sorted(ncdna_sort[ncdna]):
+      print (organizm, file=f, end=" ")
+      print (ncdna_sort[ncdna][organizm], file=f)
     print ("", file=f)
   f.close()
 
