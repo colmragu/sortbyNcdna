@@ -69,18 +69,40 @@ def print_sorted(ncdna_sort, outputfile):
   f = open(outputfile, "w")
   for ncdna in sorted(ncdna_sort.keys(), key=len): 
     print (ncdna, file=f)
-    for organizm in sorted(ncdna_sort[ncdna]):
-      print (organizm, file=f, end=" ")
-      print (ncdna_sort[ncdna][organizm], file=f)
-    print ("", file=f)
+    print_element(ncdna_sort,ncdna,f)
   f.close()
+
+def print_sorted_contains_note(ncdna_sort, note , outputfile):
+  # prints all genes for a key any gene contains note
+  f = open(outputfile, "w")
+  matches=[]
+  for ncdna in sorted(ncdna_sort.keys(), key=len):
+    for organizm in sorted(ncdna_sort[ncdna]):
+      for gene in ncdna_sort[ncdna][organizm].keys():
+        if note.lower() in str(ncdna_sort[ncdna][organizm][gene][0]).lower():
+          matches.append(ncdna)
+          break
+
+  for match in sorted(matches, key=len):
+    print (match, file=f)
+    print_element(ncdna_sort,match, f)
+
+  f.close()
+
+def print_element(ncdna_sort,ncdna, f):
+
+  for organizm in sorted(ncdna_sort[ncdna]):
+    print (organizm, file=f, end=" ")
+    print (ncdna_sort[ncdna][organizm], file=f)
+  print ("", file=f)
+ 
+
 
 def sortall(gb_files): 
   ncdna_sort = {}
   for gb_file in gb_files:
     print(gb_file)
     ncdna_sort = sortbyNcdna(ncdna_sort, gb_file)
-
   return(ncdna_sort)
 
 def parse_commandline():
@@ -92,7 +114,7 @@ def parse_commandline():
     print(help_message)
     return(0)
   ncdna_sorted = sortall(gb_files)
-
-  print_sorted(ncdna_sorted, outputfile)
+  print_sorted(ncdna_sorted,outputfile)
+#  print_sorted_contains_note(ncdna_sorted,"ase", outputfile)
 
 parse_commandline()
