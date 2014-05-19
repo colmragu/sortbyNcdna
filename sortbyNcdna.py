@@ -73,7 +73,7 @@ def print_sorted(ncdna_sort, outputfile):
   f.close()
 
 def print_sorted_contains_note(ncdna_sort, note , outputfile):
-  # prints all genes for a key any gene contains note
+# ornts all genes for sorted under a ncdna key if any gene contains a given note
   f = open(outputfile, "w")
   matches=[]
   for ncdna in sorted(ncdna_sort.keys(), key=len):
@@ -93,7 +93,8 @@ def print_element(ncdna_sort,ncdna, f):
 
   for organizm in sorted(ncdna_sort[ncdna]):
     print (organizm, file=f, end=" ")
-    print (ncdna_sort[ncdna][organizm], file=f)
+    for gene in ncdna_sort[ncdna][organizm]:
+      print (ncdna_sort[ncdna][organizm][gene], file=f)
   print ("", file=f)
  
 
