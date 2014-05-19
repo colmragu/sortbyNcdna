@@ -82,22 +82,17 @@ def print_sorted_contains_note(ncdna_sort, note , outputfile):
         if note.lower() in str(ncdna_sort[ncdna][organizm][gene][0]).lower():
           matches.append(ncdna)
           break
-
   for match in sorted(matches, key=len):
     print (match, file=f)
     print_element(ncdna_sort,match, f)
-
   f.close()
 
 def print_element(ncdna_sort,ncdna, f):
-
   for organizm in sorted(ncdna_sort[ncdna]):
     print (organizm, file=f, end=" ")
     for gene in ncdna_sort[ncdna][organizm]:
       print (ncdna_sort[ncdna][organizm][gene], file=f)
   print ("", file=f)
- 
-
 
 def sortall(gb_files): 
   ncdna_sort = {}
@@ -109,13 +104,23 @@ def sortall(gb_files):
 def parse_commandline():
   help_message = "Incorrect command you need to supply a gbk file \n python sortbyNcdna.py data/NC_009930.gbk outputfile \n python sortbyNcdna.py data/NC_017100.gbk data/NC_017118.gbk data/NC_009931.gbk outputfile \n python sortbyNcdna.py data/*.gbk outputfile"
   if len(sys.argv) > 1:
-    gb_files = sys.argv[1:-1]  
-    outputfile = sys.argv[-1]
+    if sys.argv[1] == "-search":
+
+      gb_files = sys.argv[3:-1]
+      outputfile = sys.argv[-1]
+      search_string = sys.argv[2]
+      ncdna_sorted = sortall(gb_files)
+      print_sorted_contains_note(ncdna_sorted,search_string, outputfile)  
+    else: 
+      gb_files = sys.argv[1:-1]
+      outputfile = sys.argv[-1] 
+      ncdna_sorted = sortall(gb_files)
+      print_sorted(ncdna_sorted,outputfile)
   else:
     print(help_message)
     return(0)
-  ncdna_sorted = sortall(gb_files)
-  print_sorted(ncdna_sorted,outputfile)
-#  print_sorted_contains_note(ncdna_sorted,"ase", outputfile)
+
+
+
 
 parse_commandline()
