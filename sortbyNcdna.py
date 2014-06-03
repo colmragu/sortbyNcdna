@@ -112,7 +112,6 @@ def parse_commandline():
   help_message = "Incorrect command you need to supply a gbk file \n python sortbyNcdna.py -sort data/NC_009930.gbk outputfile \n python sortbyNcdna.py -sort data/Azospirillum_B510_uid46085/NC_013860.gbk Azospirillum_B510_uid46085.txt\n python sortbyNcdna.py -search protein data/Azospirillum_B510_uid46085/NC_013860.gbk Azospirillum_B510_uid46085.txt" 
   if len(sys.argv) > 1:
     if sys.argv[1] == "-search":
-
       gb_files = sys.argv[3:-1]
       outputfile = sys.argv[-1]
       search_string = sys.argv[2]
@@ -123,17 +122,11 @@ def parse_commandline():
       outputfile = sys.argv[-1]
       ncdna_sorted = sortall(gb_files)
       print_sorted(ncdna_sorted,outputfile)
-
-
-
-
-
+    else: 
+      print(help_message)
+      return(0)
 
   else:
     print(help_message)
     return(0)
-
-
-
-
 parse_commandline()
