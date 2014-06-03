@@ -16,6 +16,7 @@
 
 from __future__ import print_function
 from Bio import SeqIO
+import difflib
 import pdb
 import sys
 
@@ -67,10 +68,44 @@ def pad_gb_features(feature):
 
 def print_sorted(ncdna_sort, outputfile):
   f = open(outputfile, "w")
-  for ncdna in sorted(ncdna_sort.keys(), key=len): 
+  commonsubstrings = findcommonsubstrings(ncdna_sort.keys(), 5, 5)
+  print (commonsubstrings,file = f)
+  for ncdna in reversed(sorted(ncdna_sort.keys(), key= lambda x: sortbycommonsubstring(x, commonsubstrings))):
     print (ncdna, file=f)
     print_element(ncdna_sort,ncdna,f)
   f.close()
+
+def findcommonsubstrings(ncdna_keys, minlen, minoccurances):
+  commonsubstrings = {}
+  mostcommonsubstrings=[]
+
+  for key in ncdna_keys:
+    for key2 in ncdna_keys:
+      if key == key2: 
+        continue
+      seq_matcher = difflib.SequenceMatcher(None, key, key2)
+      longest_seq = seq_matcher.find_longest_match(0, len(key), 0, len(key2))
+      if longest_seq.size > minlen:
+        seq = key[longest_seq.a:longest_seq.a+longest_seq.size]
+        if seq in commonsubstrings.keys():
+          commonsubstrings[seq]+=1
+        else:
+          commonsubstrings[seq]=1
+
+  for k in reversed(sorted(commonsubstrings.keys(), key=commonsubstrings.__getitem__)):
+    if commonsubstrings[k] >= minoccurances: 
+      mostcommonsubstrings.append(k)
+    else:
+      break
+       
+  return (mostcommonsubstrings)
+
+def sortbycommonsubstring(ncdna, commonsubstrings):
+  contains_substring=[0]*len(commonsubstrings)
+  for i, substring in enumerate(commonsubstrings):
+    if substring in ncdna:
+      contains_substring[i]=1
+  return (tuple(contains_substring))
 
 def print_sorted_contains_note(ncdna_sort, note , outputfile):
 # ornts all genes for sorted under a ncdna key if any gene contains a given note
@@ -125,7 +160,6 @@ def parse_commandline():
     else: 
       print(help_message)
       return(0)
-
   else:
     print(help_message)
     return(0)
