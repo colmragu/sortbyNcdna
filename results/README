@@ -5,7 +5,7 @@ Provisional Results
 #####################################################################################
 File: Bifidobacterium.out
 
-Command: "python sortbyNcdna.py data/Bifidobacterium_*/*.gbk results/Bifidobacterium.out"
+Command: "python -sort sortbyNcdna.py data/Bifidobacterium_*/*.gbk results/Bifidobacterium.out"
 Organizms: Bifidobacterium_adolescentis_ATCC_15703_uid58559 Bifidobacterium_animalis_lactis_DSM_10140_uid59357 Bifidobacterium_longum_F8_uid197184 Bifidobacterium_animalis_ATCC_25527_uid162513 Bifidobacterium_animalis_lactis_V9_uid158865 Bifidobacterium_longum_infantis_157F_uid62693 Bifidobacterium_animalis_lactis_AD011_uid58911 Bifidobacterium_asteroides_PRL2011_uid176921 Bifidobacterium_longum_infantis_ATCC_15697_uid159865 Bifidobacterium_animalis_lactis_ATCC_27673_uid222803 Bifidobacterium_bifidum_BGN4_uid167988 Bifidobacterium_longum_infantis_ATCC_15697_uid58677 Bifidobacterium_animalis_lactis_B420_uid163691 Bifidobacterium_bifidum_PRL2010_uid59883 Bifidobacterium_longum_JCM_1217_uid62695 Bifidobacterium_animalis_lactis_BB_12_uid158871 Bifidobacterium_bifidum_S17_uid59545 Bifidobacterium_longum_JDM301_uid49131 Bifidobacterium_animalis_lactis_Bi_07_uid163693 Bifidobacterium_breve_ACS_071_V_Sch8b_uid158863 Bifidobacterium_longum_KACC_91563_uid158861 Bifidobacterium_animalis_lactis_Bl_04_uid59359 Bifidobacterium_breve_UCC2003_uid193702 Bifidobacterium_longum_NCC2705_uid57939 Bifidobacterium_animalis_lactis_Bl12_uid210081 Bifidobacterium_dentium_Bd1_uid43091 Bifidobacterium_thermophilum_RBL67_uid193770 Bifidobacterium_animalis_lactis_BLC1_uid158867 Bifidobacterium_longum_BBMN68_uid60163 Bifidobacterium_animalis_lactis_CNCM_I_2494_uid158869/ Bifidobacterium_longum_DJO10A_uid58833
 
 Results: 
@@ -18,7 +18,7 @@ The "TGACA" Non coding dna proceeds genes that code for Ribosomal protein L24, a
 There are many more correlations. I have selected these to show that correlations exist and predictions that can be made.
 
 File: Azospirillum.out
-Command: "python sortbyNcdna.py data/Azospirillum_*/*.gbk results/Azospirillum.out"
+Command: "python sortbyNcdna.py -sort data/Azospirillum_*/*.gbk results/Azospirillum.out"
 
 Organizms: Azospirillum_B510_uid46085 Azospirillum_brasilense_Sp245_uid162161 Azospirillum_lipoferum_4B_uid82343
 

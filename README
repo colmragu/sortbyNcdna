@@ -16,13 +16,16 @@ Usage:
 run "python sortbyNCdna.py input.gbk output" this open input.gbk sort genes according the ncdna that proceeds them. It will then write the output to the file output.
 
 Examples:
-"python sortbyNcdna.py data/NC_009930.gbk outputfile"
+"python sortbyNcdna.py -sort data/NC_009930.gbk outputfile"
 
-"python sortbyNcdna.py data/NC_017100.gbk data/NC_017118.gbk data/NC_009931.gbk outputfile \n"
+"python sortbyNcdna.py -sort data/NC_017100.gbk data/NC_017118.gbk data/NC_009931.gbk outputfile \n"
 Sorts multiple files
 
-"python sortbyNcdna.py data/*.gbk outputfile"
+"python sortbyNcdna.py -sort data/*.gbk outputfile"
 Uses the wild card * to sort all .gbk files in a directory
+
+Searching for protines of a certin function. Supply "-search" and the string you want to search for in this case "protein" and it will print the NCDNA + the gene function under it provided that one gene's note contains the search text.
+"python sortbyNcdna.py -search protein data/Azospirillum_B510_uid46085/NC_013860.gbk Azospirillum_B510_uid46085.txt"
 
 Data:
 Inside the data folder is a bash script (download.sh )that will download and extract all the Bacteria gbk files from ncbi ftp server. You use any gbk file that you have. Just point to it when calling the command.
