@@ -37,21 +37,19 @@ def sortbyNcdna(sortbyNCDNA, gb_file):
     feature = pad_gb_features(feature)
     ncdna = str(gb_record.seq[scan_pos:feature.location.start.position+1]) #ncdna = non coding dna
     if ncdna == "":
-      sortbyNCDNA = addfeaturetodict(ncdna_last,sortbyNCDNA, feature, gb_record.name)
+      sortbyNCDNA = addfeaturetodict(ncdna_last,sortbyNCDNA, feature)
     else:
-      sortbyNCDNA = addfeaturetodict(ncdna,sortbyNCDNA, feature, gb_record.name)
+      sortbyNCDNA = addfeaturetodict(ncdna,sortbyNCDNA, feature)
       ncdna_last= ncdna
     scan_pos = feature.location.end.position
   return(sortbyNCDNA)
 
-def addfeaturetodict(ncdna,sortbyNCDNA, feature, locus):
+def addfeaturetodict(ncdna,sortbyNCDNA, feature):
   if not sortbyNCDNA.has_key(ncdna):
     sortbyNCDNA[ncdna]={}
-  if not sortbyNCDNA[ncdna].has_key(locus):
-    sortbyNCDNA[ncdna][locus]={}
-  if not sortbyNCDNA[ncdna][locus].has_key(feature.qualifiers["db_xref"][0]):
-    sortbyNCDNA[ncdna][locus][feature.qualifiers["db_xref"][0]] ={} 
-  sortbyNCDNA[ncdna][locus][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end)) #add more information
+  if not sortbyNCDNA[ncdna].has_key(feature.qualifiers["db_xref"][0]):
+    sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] ={} 
+  sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end)) #add more information
   return(sortbyNCDNA) 
 
 def formatestring(note, start, end ):
@@ -66,6 +64,22 @@ def pad_gb_features(feature):
     feature.qualifiers["db_xref"]=["nodb_xref"]
   return feature
 
+def dictbyCommonsubstring(ncdna_sort,commonsubstrings ,outputfile):
+  dictbycommonsubstring = dict((substring,{}) for substring in commonsubstrings)
+  for substring in commonsubstrings:
+    for element in ncdna_sort.keys():
+      if substring in element:
+        dictbycommonsubstring[substring].update(ncdna_sort[element])
+  return(dictbycommonsubstring)    
+
+def printbyCommonsubstring(ncdna_sort, outputfile):
+  f = open(outputfile, "w")
+  commonsubstrings = findcommonsubstrings(ncdna_sort.keys(), 5, 5)
+  dictbycommonsubstring = dictbyCommonsubstring(ncdna_sort,commonsubstrings ,outputfile)  
+  for ncdna in dictbycommonsubstring.keys():
+    print(ncdna, file = f)
+    print_element(dictbycommonsubstring,ncdna,f)
+
 def print_sorted(ncdna_sort, outputfile):
   f = open(outputfile, "w")
   commonsubstrings = findcommonsubstrings(ncdna_sort.keys(), 5, 5)
@@ -78,7 +92,6 @@ def print_sorted(ncdna_sort, outputfile):
 def findcommonsubstrings(ncdna_keys, minlen, minoccurances):
   commonsubstrings = {}
   mostcommonsubstrings=[]
-
   for key in ncdna_keys:
     for key2 in ncdna_keys:
       if key == key2: 
@@ -91,13 +104,11 @@ def findcommonsubstrings(ncdna_keys, minlen, minoccurances):
           commonsubstrings[seq]+=1
         else:
           commonsubstrings[seq]=1
-
   for k in reversed(sorted(commonsubstrings.keys(), key=commonsubstrings.__getitem__)):
     if commonsubstrings[k] >= minoccurances: 
       mostcommonsubstrings.append(k)
     else:
-      break
-       
+      break      
   return (mostcommonsubstrings)
 
 def sortbycommonsubstring(ncdna, commonsubstrings):
@@ -130,10 +141,8 @@ def search_string_in_notes(note, ncdna_sort, ncdna):
   return 0
 
 def print_element(ncdna_sort,ncdna, f):
-  for organizm in sorted(ncdna_sort[ncdna]):
-    print (organizm, file=f, end=" ")
-    for gene in ncdna_sort[ncdna][organizm]:
-      print (ncdna_sort[ncdna][organizm][gene], file=f)
+  for gene in ncdna_sort[ncdna]:
+      print (ncdna_sort[ncdna][gene], file=f)
   print ("", file=f)
 
 def sortall(gb_files): 
@@ -156,6 +165,7 @@ def parse_commandline():
       gb_files = sys.argv[2:-1]
       outputfile = sys.argv[-1]
       ncdna_sorted = sortall(gb_files)
+#      printbyCommonsubstring(ncdna_sorted,outputfile)
       print_sorted(ncdna_sorted,outputfile)
     else: 
       print(help_message)
