@@ -141,8 +141,9 @@ def search_string_in_notes(note, ncdna_sort, ncdna):
   return 0
 
 def print_element(ncdna_sort,ncdna, f):
-  for gene in ncdna_sort[ncdna]:
-      print (ncdna_sort[ncdna][gene], file=f)
+
+  for gene,info in sorted(ncdna_sort[ncdna].items(), key=lambda x:x[1][1]):
+      print (info, file=f)
   print ("", file=f)
 
 def sortall(gb_files): 
@@ -165,8 +166,8 @@ def parse_commandline():
       gb_files = sys.argv[2:-1]
       outputfile = sys.argv[-1]
       ncdna_sorted = sortall(gb_files)
-#      printbyCommonsubstring(ncdna_sorted,outputfile)
-      print_sorted(ncdna_sorted,outputfile)
+      printbyCommonsubstring(ncdna_sorted,outputfile)
+#      print_sorted(ncdna_sorted,outputfile)
     else: 
       print(help_message)
       return(0)
