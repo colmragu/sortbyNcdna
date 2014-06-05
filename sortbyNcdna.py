@@ -33,7 +33,6 @@ def sortbyNcdna(sortbyNCDNA, gb_file):
     return (sortbyNCDNA) 
   f.close()
   for feature in gb_record.features[1:]: #Select all but the first entry in gbk file
-
     feature = pad_gb_features(feature)
     ncdna = str(gb_record.seq[scan_pos:feature.location.start.position+1]) #ncdna = non coding dna
     if ncdna == "":
@@ -45,10 +44,16 @@ def sortbyNcdna(sortbyNCDNA, gb_file):
   return(sortbyNCDNA)
 
 def addfeaturetodict(ncdna,sortbyNCDNA, feature):
+#  pdb.set_trace()
+  if not "CDS" in feature.type:
+    return(sortbyNCDNA)
+
+  if feature.qualifiers.has_key("product"):
+    feature.qualifiers["note"]  = feature.qualifiers["product"]
   if not sortbyNCDNA.has_key(ncdna):
     sortbyNCDNA[ncdna]={}
   if not sortbyNCDNA[ncdna].has_key(feature.qualifiers["db_xref"][0]):
-    sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] ={} 
+    sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] ={}
   sortbyNCDNA[ncdna][feature.qualifiers["db_xref"][0]] =formatestring(feature.qualifiers["note"]  ,int (feature.location.start) ,int (feature.location.end)) #add more information
   return(sortbyNCDNA) 
 
@@ -141,7 +146,6 @@ def search_string_in_notes(note, ncdna_sort, ncdna):
   return 0
 
 def print_element(ncdna_sort,ncdna, f):
-
   for gene,info in sorted(ncdna_sort[ncdna].items(), key=lambda x:x[1][1]):
       print (info, file=f)
   print ("", file=f)
