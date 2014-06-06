@@ -49,7 +49,8 @@ def addfeaturetodict(ncdna,sortbyNCDNA, feature):
     return(sortbyNCDNA)
 
   if feature.qualifiers.has_key("product"):
-    feature.qualifiers["note"]  = feature.qualifiers["product"]
+    feature.qualifiers["note"]  = str(feature.qualifiers["note"]) +  feature.qualifiers["product"][0]
+
   if not sortbyNCDNA.has_key(ncdna):
     sortbyNCDNA[ncdna]={}
   if not sortbyNCDNA[ncdna].has_key(feature.qualifiers["db_xref"][0]):
@@ -97,18 +98,22 @@ def print_sorted(ncdna_sort, outputfile):
 def findcommonsubstrings(ncdna_keys, minlen, minoccurances):
   commonsubstrings = {}
   mostcommonsubstrings=[]
-  for key in ncdna_keys:
-    for key2 in ncdna_keys:
+  for x, key in enumerate(ncdna_keys):
+    print (len(ncdna_keys))
+    print (x)
+    for key2 in ncdna_keys[x+1:-1]:
       if key == key2: 
         continue
       seq_matcher = difflib.SequenceMatcher(None, key, key2)
-      longest_seq = seq_matcher.find_longest_match(0, len(key), 0, len(key2))
-      if longest_seq.size > minlen:
-        seq = key[longest_seq.a:longest_seq.a+longest_seq.size]
-        if seq in commonsubstrings.keys():
-          commonsubstrings[seq]+=1
-        else:
-          commonsubstrings[seq]=1
+      all_seq = seq_matcher.get_matching_blocks()
+#      pdb.set_trace()
+      for test_seq in all_seq:
+        if test_seq[2] > minlen:
+          seq = key[test_seq[0]:test_seq[0] + test_seq[2]]
+          if seq in commonsubstrings.keys():
+            commonsubstrings[seq]+=1
+          else:
+            commonsubstrings[seq]=1
   for k in reversed(sorted(commonsubstrings.keys(), key=commonsubstrings.__getitem__)):
     if commonsubstrings[k] >= minoccurances: 
       mostcommonsubstrings.append(k)
