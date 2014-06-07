@@ -24,7 +24,6 @@ def sortbyNcdna(sortbyNCDNA, gb_file):
   scan_pos = 0
   f = open(gb_file,"r")
   ncdna_last = "S"
-
   count =0
   try:
     gb_record = SeqIO.read(f, "genbank")
@@ -82,9 +81,9 @@ def printbyCommonsubstring(ncdna_sort, outputfile):
   f = open(outputfile, "w")
   commonsubstrings = findcommonsubstrings(ncdna_sort.keys(), 5, 5)
   dictbycommonsubstring = dictbyCommonsubstring(ncdna_sort,commonsubstrings ,outputfile)  
-  for ncdna in dictbycommonsubstring.keys():
-    print(ncdna, file = f)
-    print_element(dictbycommonsubstring,ncdna,f)
+  for ncdna in sorted(dictbycommonsubstring.items(), key= lambda x:len(x[1]), reverse=True):
+    print(ncdna[0], file = f)
+    print_element(dictbycommonsubstring,ncdna[0],f)
 
 def print_sorted(ncdna_sort, outputfile):
   f = open(outputfile, "w")
@@ -98,10 +97,11 @@ def print_sorted(ncdna_sort, outputfile):
 def findcommonsubstrings(ncdna_keys, minlen, minoccurances):
   commonsubstrings = {}
   mostcommonsubstrings=[]
+  ncdna_key= sorted(ncdna_keys,reverse=True)
   for x, key in enumerate(ncdna_keys):
     print (len(ncdna_keys))
     print (x)
-    for key2 in ncdna_keys[x+1:-1]:
+    for key2 in ncdna_keys[x:-1]:
       if key == key2: 
         continue
       seq_matcher = difflib.SequenceMatcher(None, key, key2)
